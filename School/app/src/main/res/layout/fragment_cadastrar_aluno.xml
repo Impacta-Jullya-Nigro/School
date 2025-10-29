@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="Nome do Aluno">
+            android:hint="Nome do Aluno">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_nome"
