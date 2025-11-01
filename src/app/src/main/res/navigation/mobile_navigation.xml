@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.school.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_userListFragment"
+            app:destination="@id/userListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.school.ui.register.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userListFragment"
+        android:name="com.example.school.ui.userlist.UserListFragment"
+        android:label="fragment_user_list"
+        tools:layout="@layout/fragment_user_list" />
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.school.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_cadastro"
+        android:name="com.example.school.ui.cadastro.CadastroFragment"
+        android:label="@string/menu_cadastro"
+        tools:layout="@layout/fragment_cadastro">
+        <action
+            android:id="@+id/action_nav_gallery_to_cadastrarAlunoFragment"
+            app:destination="@id/cadastrarAlunoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_contato"
+        android:name="com.example.school.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_contato"
+        tools:layout="@layout/fragment_slideshow" >
+        <action
+            android:id="@+id/action_nav_contato_to_nav_cadastro"
+            app:destination="@id/nav_cadastro" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastrarAlunoFragment"
+        android:name="com.example.school.CadastrarAlunoFragment"
+        android:label="fragment_cadastrar_aluno"
+        tools:layout="@layout/fragment_cadastrar_aluno" />
+</navigation>
