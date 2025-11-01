@@ -29,6 +29,22 @@ class CadastroFragment : Fragment() {
         binding.imageButtonAlunos.setOnClickListener {
             findNavController().navigate(R.id.action_nav_gallery_to_cadastrarAlunoFragment)
         }
+
+        binding.imageButtonResponsaveis.setOnClickListener {
+            findNavController().navigate(R.id.action_nav_cadastro_to_cadastrarResponsavelFragment)
+        }
+
+        binding.imageButtonTurma.setOnClickListener {
+            findNavController().navigate(R.id.action_nav_cadastro_to_cadastrarTurmaFragment)
+        }
+
+        binding.imageButtonEscola.setOnClickListener {
+            findNavController().navigate(R.id.action_nav_cadastro_to_cadastrarEscolaFragment)
+        }
+
+        binding.imageButtonCondutores.setOnClickListener {
+            findNavController().navigate(R.id.action_nav_cadastro_to_cadastrarCondutoresFragment)
+        }
     }
 
     override fun onDestroyView() {

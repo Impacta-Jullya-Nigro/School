@@ -44,6 +44,10 @@
         "source": "C:\\Users\\hleit\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "com.example.school.app-debug-54:/drawable_turma.png.flat",
+        "source": "com.example.school.app-main-56:/drawable/turma.png"
+    },
+    {
         "merged": "C:\\Users\\hleit\\.gradle\\daemon\\8.13\\com.example.school.app-debug-54:\\layout_content_main.xml.flat",
         "source": "C:\\Users\\hleit\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\content_main.xml"
     },
@@ -100,12 +104,36 @@
         "source": "C:\\Users\\hleit\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\menu\\main.xml"
     },
     {
-        "merged": "com.example.school.app-debug-54:/layout_fragment_register.xml.flat",
-        "source": "com.example.school.app-main-56:/layout/fragment_register.xml"
+        "merged": "com.example.school.app-debug-54:/layout_fragment_cadastrar_turma.xml.flat",
+        "source": "com.example.school.app-main-56:/layout/fragment_cadastrar_turma.xml"
+    },
+    {
+        "merged": "com.example.school.app-debug-54:/layout_fragment_cadastro.xml.flat",
+        "source": "com.example.school.app-main-56:/layout/fragment_cadastro.xml"
+    },
+    {
+        "merged": "com.example.school.app-debug-54:/drawable_escola.png.flat",
+        "source": "com.example.school.app-main-56:/drawable/escola.png"
+    },
+    {
+        "merged": "com.example.school.app-debug-54:/layout_fragment_cadastrar_escola.xml.flat",
+        "source": "com.example.school.app-main-56:/layout/fragment_cadastrar_escola.xml"
+    },
+    {
+        "merged": "com.example.school.app-debug-54:/drawable_condutor.png.flat",
+        "source": "com.example.school.app-main-56:/drawable/condutor.png"
     },
     {
         "merged": "C:\\Users\\hleit\\.gradle\\daemon\\8.13\\com.example.school.app-debug-54:\\drawable_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\hleit\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\hleit\\.gradle\\daemon\\8.13\\com.example.school.app-debug-54:\\drawable_account.png.flat",
+        "source": "C:\\Users\\hleit\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\drawable\\account.png"
+    },
+    {
+        "merged": "com.example.school.app-debug-54:/drawable_responsaveis.png.flat",
+        "source": "com.example.school.app-main-56:/drawable/responsaveis.png"
     },
     {
         "merged": "C:\\Users\\hleit\\.gradle\\daemon\\8.13\\com.example.school.app-debug-54:\\drawable_side_nav_bar.xml.flat",
@@ -136,6 +164,10 @@
         "source": "C:\\Users\\hleit\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\xml\\data_extraction_rules.xml"
     },
     {
+        "merged": "com.example.school.app-debug-54:/layout_fragment_cadastrar_responsaveis.xml.flat",
+        "source": "com.example.school.app-main-56:/layout/fragment_cadastrar_responsaveis.xml"
+    },
+    {
         "merged": "C:\\Users\\hleit\\.gradle\\daemon\\8.13\\com.example.school.app-debug-54:\\layout_fragment_user_list.xml.flat",
         "source": "C:\\Users\\hleit\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_user_list.xml"
     },
@@ -148,8 +180,8 @@
         "source": "C:\\Users\\hleit\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\app_bar_main.xml"
     },
     {
-        "merged": "com.example.school.app-debug-54:/layout_user_list_item.xml.flat",
-        "source": "com.example.school.app-main-56:/layout/user_list_item.xml"
+        "merged": "com.example.school.app-debug-54:/layout_fragment_cadastrar_condutores.xml.flat",
+        "source": "com.example.school.app-main-56:/layout/fragment_cadastrar_condutores.xml"
     },
     {
         "merged": "C:\\Users\\hleit\\.gradle\\daemon\\8.13\\com.example.school.app-debug-54:\\mipmap-mdpi_ic_launcher.webp.flat",

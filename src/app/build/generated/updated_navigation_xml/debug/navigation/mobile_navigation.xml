@@ -51,6 +51,18 @@ app:startDestination="@id/loginFragment" >
     <action
         android:id="@+id/action_nav_gallery_to_cadastrarAlunoFragment"
         app:destination="@id/cadastrarAlunoFragment" />
+    <action
+        android:id="@+id/action_nav_cadastro_to_cadastrarResponsavelFragment"
+        app:destination="@id/cadastrarResponsavelFragment" />
+    <action
+        android:id="@+id/action_nav_cadastro_to_cadastrarTurmaFragment"
+        app:destination="@id/cadastrarTurmaFragment" />
+    <action
+        android:id="@+id/action_nav_cadastro_to_cadastrarEscolaFragment"
+        app:destination="@id/cadastrarEscolaFragment" />
+    <action
+        android:id="@+id/action_nav_cadastro_to_cadastrarCondutoresFragment"
+        app:destination="@id/cadastrarCondutoresFragment" />
 
 </fragment>
 <fragment
@@ -69,4 +81,24 @@ app:startDestination="@id/loginFragment" >
     android:name="com.example.school.CadastrarAlunoFragment"
     android:label="fragment_cadastrar_aluno"
     tools:layout="@layout/fragment_cadastrar_aluno" />
+<fragment
+    android:id="@+id/cadastrarResponsavelFragment"
+    android:name="com.example.school.CadastrarResponsavelFragment"
+    android:label="fragment_cadastrar_responsaveis"
+    tools:layout="@layout/fragment_cadastrar_responsaveis" />
+<fragment
+    android:id="@+id/cadastrarTurmaFragment"
+    android:name="com.example.school.CadastrarTurmaFragment"
+    android:label="fragment_cadastrar_turma"
+    tools:layout="@layout/fragment_cadastrar_turma" />
+<fragment
+    android:id="@+id/cadastrarEscolaFragment"
+    android:name="com.example.school.CadastrarEscolaFragment"
+    android:label="fragment_cadastrar_escola"
+    tools:layout="@layout/fragment_cadastrar_escola" />
+<fragment
+    android:id="@+id/cadastrarCondutoresFragment"
+    android:name="com.example.school.CadastrarCondutoresFragment"
+    android:label="fragment_cadastrar_condutores"
+    tools:layout="@layout/fragment_cadastrar_condutores" />
 </navigation>

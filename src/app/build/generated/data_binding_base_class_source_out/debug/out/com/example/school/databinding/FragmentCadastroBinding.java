@@ -24,13 +24,49 @@ public final class FragmentCadastroBinding implements ViewBinding {
   public final ImageButton imageButtonAlunos;
 
   @NonNull
-  public final TextView textView3;
+  public final ImageButton imageButtonCondutores;
+
+  @NonNull
+  public final ImageButton imageButtonEscola;
+
+  @NonNull
+  public final ImageButton imageButtonResponsaveis;
+
+  @NonNull
+  public final ImageButton imageButtonTurma;
+
+  @NonNull
+  public final TextView textViewAlunos;
+
+  @NonNull
+  public final TextView textViewCondutores;
+
+  @NonNull
+  public final TextView textViewEscola;
+
+  @NonNull
+  public final TextView textViewResponsaveis;
+
+  @NonNull
+  public final TextView textViewTurma;
 
   private FragmentCadastroBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageButton imageButtonAlunos, @NonNull TextView textView3) {
+      @NonNull ImageButton imageButtonAlunos, @NonNull ImageButton imageButtonCondutores,
+      @NonNull ImageButton imageButtonEscola, @NonNull ImageButton imageButtonResponsaveis,
+      @NonNull ImageButton imageButtonTurma, @NonNull TextView textViewAlunos,
+      @NonNull TextView textViewCondutores, @NonNull TextView textViewEscola,
+      @NonNull TextView textViewResponsaveis, @NonNull TextView textViewTurma) {
     this.rootView = rootView;
     this.imageButtonAlunos = imageButtonAlunos;
-    this.textView3 = textView3;
+    this.imageButtonCondutores = imageButtonCondutores;
+    this.imageButtonEscola = imageButtonEscola;
+    this.imageButtonResponsaveis = imageButtonResponsaveis;
+    this.imageButtonTurma = imageButtonTurma;
+    this.textViewAlunos = textViewAlunos;
+    this.textViewCondutores = textViewCondutores;
+    this.textViewEscola = textViewEscola;
+    this.textViewResponsaveis = textViewResponsaveis;
+    this.textViewTurma = textViewTurma;
   }
 
   @Override
@@ -66,13 +102,63 @@ public final class FragmentCadastroBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView3;
-      TextView textView3 = ViewBindings.findChildViewById(rootView, id);
-      if (textView3 == null) {
+      id = R.id.imageButtonCondutores;
+      ImageButton imageButtonCondutores = ViewBindings.findChildViewById(rootView, id);
+      if (imageButtonCondutores == null) {
         break missingId;
       }
 
-      return new FragmentCadastroBinding((ConstraintLayout) rootView, imageButtonAlunos, textView3);
+      id = R.id.imageButtonEscola;
+      ImageButton imageButtonEscola = ViewBindings.findChildViewById(rootView, id);
+      if (imageButtonEscola == null) {
+        break missingId;
+      }
+
+      id = R.id.imageButtonResponsaveis;
+      ImageButton imageButtonResponsaveis = ViewBindings.findChildViewById(rootView, id);
+      if (imageButtonResponsaveis == null) {
+        break missingId;
+      }
+
+      id = R.id.imageButtonTurma;
+      ImageButton imageButtonTurma = ViewBindings.findChildViewById(rootView, id);
+      if (imageButtonTurma == null) {
+        break missingId;
+      }
+
+      id = R.id.textViewAlunos;
+      TextView textViewAlunos = ViewBindings.findChildViewById(rootView, id);
+      if (textViewAlunos == null) {
+        break missingId;
+      }
+
+      id = R.id.textViewCondutores;
+      TextView textViewCondutores = ViewBindings.findChildViewById(rootView, id);
+      if (textViewCondutores == null) {
+        break missingId;
+      }
+
+      id = R.id.textViewEscola;
+      TextView textViewEscola = ViewBindings.findChildViewById(rootView, id);
+      if (textViewEscola == null) {
+        break missingId;
+      }
+
+      id = R.id.textViewResponsaveis;
+      TextView textViewResponsaveis = ViewBindings.findChildViewById(rootView, id);
+      if (textViewResponsaveis == null) {
+        break missingId;
+      }
+
+      id = R.id.textViewTurma;
+      TextView textViewTurma = ViewBindings.findChildViewById(rootView, id);
+      if (textViewTurma == null) {
+        break missingId;
+      }
+
+      return new FragmentCadastroBinding((ConstraintLayout) rootView, imageButtonAlunos,
+          imageButtonCondutores, imageButtonEscola, imageButtonResponsaveis, imageButtonTurma,
+          textViewAlunos, textViewCondutores, textViewEscola, textViewResponsaveis, textViewTurma);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -20,47 +20,47 @@
 15-->[androidx.core:core:1.17.0] C:\Users\hleit\.gradle\caches\8.13\transforms\5db8b1ab60e2596260a84b2f3daa9dd6\transformed\core-1.17.0\AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:5:5-25:19
+17-->D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:5:5-25:19
 18        android:name="com.example.school.SchoolApplication"
-18-->C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:6:9-42
+18-->D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:6:9-42
 19        android:allowBackup="true"
-19-->C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:7:9-35
+19-->D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:7:9-35
 20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 20-->[androidx.core:core:1.17.0] C:\Users\hleit\.gradle\caches\8.13\transforms\5db8b1ab60e2596260a84b2f3daa9dd6\transformed\core-1.17.0\AndroidManifest.xml:28:18-86
 21        android:dataExtractionRules="@xml/data_extraction_rules"
-21-->C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:8:9-65
+21-->D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:8:9-65
 22        android:debuggable="true"
 23        android:extractNativeLibs="false"
 24        android:fullBackupContent="@xml/backup_rules"
-24-->C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:9:9-54
+24-->D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:9:9-54
 25        android:icon="@mipmap/ic_launcher"
-25-->C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:10:9-43
+25-->D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:10:9-43
 26        android:label="@string/app_name"
-26-->C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:11:9-41
+26-->D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:11:9-41
 27        android:roundIcon="@mipmap/ic_launcher_round"
-27-->C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:12:9-54
+27-->D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:12:9-54
 28        android:supportsRtl="true"
-28-->C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:13:9-35
+28-->D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:13:9-35
 29        android:testOnly="true"
 30        android:theme="@style/Theme.School" >
-30-->C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:14:9-44
+30-->D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:14:9-44
 31        <activity
-31-->C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:15:9-24:20
+31-->D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:15:9-24:20
 32            android:name="com.example.school.MainActivity"
-32-->C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:16:13-41
+32-->D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:16:13-41
 33            android:exported="true"
-33-->C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:17:13-36
+33-->D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:17:13-36
 34            android:label="@string/app_name" >
-34-->C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:18:13-45
+34-->D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:18:13-45
 35            <intent-filter>
-35-->C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:19:13-23:29
+35-->D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:19:13-23:29
 36                <action android:name="android.intent.action.MAIN" />
-36-->C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:20:17-69
-36-->C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:20:25-66
+36-->D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:20:17-69
+36-->D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:20:25-66
 37
 38                <category android:name="android.intent.category.LAUNCHER" />
-38-->C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:22:17-77
-38-->C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:22:27-74
+38-->D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:22:17-77
+38-->D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:22:27-74
 39            </intent-filter>
 40        </activity>
 41

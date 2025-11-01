@@ -1,0 +1,111 @@
+# ========================================
+# ANDROID / KOTLIN / ANDROID STUDIO
+# ========================================
+
+# Build e artefatos
+/build/
+/app/build/
+/**/build/
+/captures/
+/outputs/
+/intermediates/
+/generated/
+/tmp/
+.gradle/
+local.properties
+
+# Logs
+*.log
+
+# IDEs e ferramentas
+# -------------------
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VS Code
+.vscode/
+
+# Arquivos temporários e de sistema
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+
+# Cache
+.cxx/
+.externalNativeBuild/
+*.class
+*.dex
+
+# Arquivos do Kotlin/Java compilados
+*.jar
+*.war
+*.ear
+
+# Arquivos de pacotes Android
+*.apk
+*.ap_
+*.aab
+
+# Gradle
+.gradle/
+gradle-app.setting
+gradle-wrapper.jar
+gradle-wrapper.properties
+gradlew
+gradlew.bat
+
+# Arquivos de ambiente local (não versionar)
+local.properties
+*.keystore
+*.jks
+*.key
+*.pem
+*.p12
+*.der
+.env
+.env.*
+
+# Configurações específicas de máquina
+/.idea/workspace.xml
+/.idea/tasks.xml
+/.idea/dictionaries
+/.idea/libraries
+/.idea/caches
+/.idea/modules.xml
+/.idea/assetWizardSettings.xml
+/.idea/gradle.xml
+/.idea/navEditor.xml
+/.idea/inspectionProfiles
+
+# Arquivos de teste e relatórios
+/test-results/
+*.test
+*.coverage
+*.ec
+*.hprof
+
+# Outros
+*.orig
+*.rej
+*.bak
+*.old
+*.tmp
+*.lock
+*.json.lock
+*.yaml.lock
+
+# Flutter/React Native (caso use híbrido)
+ios/
+node_modules/
+pubspec.lock
+Pods/
+Podfile.lock
+
+# ========================================
+# FIM
+# ========================================

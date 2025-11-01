@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:2:1-27:12
+ADDED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:2:1-27:12
 MERGED from [androidx.databinding:viewbinding:8.13.0] C:\Users\hleit\.gradle\caches\8.13\transforms\6d0441692d991159cc8a6a80615fa191\transformed\viewbinding-8.13.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-runtime-android:2.9.5] C:\Users\hleit\.gradle\caches\8.13\transforms\a9888d6505030b045fb60dac4cec06f9\transformed\navigation-runtime-release\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-android:2.9.5] C:\Users\hleit\.gradle\caches\8.13\transforms\d805fce07b7e777612e6a62dd264673f\transformed\navigation-common-release\AndroidManifest.xml:17:1-22:12
@@ -66,18 +66,18 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\hleit\.gradle\ca
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\hleit\.gradle\caches\8.13\transforms\163fdfee471c5d12fb6a9c7eb0cc7b74\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\hleit\.gradle\caches\8.13\transforms\d99e061666ca6d2638b5058d1701e637\transformed\tracing-1.2.0\AndroidManifest.xml:17:1-22:12
 	package
-		INJECTED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:5:5-25:19
-INJECTED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:5:5-25:19
+ADDED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:5:5-25:19
+INJECTED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:5:5-25:19
 MERGED from [com.google.android.material:material:1.13.0] C:\Users\hleit\.gradle\caches\8.13\transforms\5402053d1d5b72109ea122ce9f57d3ae\transformed\material-1.13.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.13.0] C:\Users\hleit\.gradle\caches\8.13\transforms\5402053d1d5b72109ea122ce9f57d3ae\transformed\material-1.13.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\hleit\.gradle\caches\8.13\transforms\4db2b5c5f678ccac551b791e35d13409\transformed\constraintlayout-2.2.1\AndroidManifest.xml:7:5-20
@@ -99,49 +99,49 @@ MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\hleit\.g
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\hleit\.gradle\caches\8.13\transforms\163fdfee471c5d12fb6a9c7eb0cc7b74\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\hleit\.gradle\caches\8.13\transforms\163fdfee471c5d12fb6a9c7eb0cc7b74\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 	android:extractNativeLibs
-		INJECTED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.17.0] C:\Users\hleit\.gradle\caches\8.13\transforms\5db8b1ab60e2596260a84b2f3daa9dd6\transformed\core-1.17.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:13:9-35
+		ADDED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:11:9-41
+		ADDED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:11:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:9:9-54
 	android:roundIcon
-		ADDED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:12:9-54
+		ADDED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:12:9-54
 	android:icon
-		ADDED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:10:9-43
+		ADDED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:10:9-43
 	android:allowBackup
-		ADDED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:7:9-35
+		ADDED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:7:9-35
 	android:theme
-		ADDED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:14:9-44
+		ADDED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:14:9-44
 	android:dataExtractionRules
-		ADDED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:8:9-65
+		ADDED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:8:9-65
 	android:name
-		ADDED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:6:9-42
+		ADDED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:6:9-42
 activity#com.example.school.MainActivity
-ADDED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:15:9-24:20
+ADDED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:15:9-24:20
 	android:label
-		ADDED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:18:13-45
+		ADDED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:18:13-45
 	android:exported
-		ADDED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:17:13-36
+		ADDED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:17:13-36
 	android:name
-		ADDED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:16:13-41
+		ADDED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:16:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:19:13-23:29
+ADDED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:19:13-23:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:20:17-69
+ADDED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:20:25-66
+		ADDED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:22:17-77
+ADDED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml:22:27-74
+		ADDED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml:22:27-74
 uses-sdk
-INJECTED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml
+INJECTED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml
+INJECTED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:8.13.0] C:\Users\hleit\.gradle\caches\8.13\transforms\6d0441692d991159cc8a6a80615fa191\transformed\viewbinding-8.13.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:viewbinding:8.13.0] C:\Users\hleit\.gradle\caches\8.13\transforms\6d0441692d991159cc8a6a80615fa191\transformed\viewbinding-8.13.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.navigation:navigation-runtime-android:2.9.5] C:\Users\hleit\.gradle\caches\8.13\transforms\a9888d6505030b045fb60dac4cec06f9\transformed\navigation-runtime-release\AndroidManifest.xml:20:5-44
@@ -265,9 +265,9 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\hleit\.gradle\cach
 MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\hleit\.gradle\caches\8.13\transforms\d99e061666ca6d2638b5058d1701e637\transformed\tracing-1.2.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\hleit\.gradle\caches\8.13\transforms\d99e061666ca6d2638b5058d1701e637\transformed\tracing-1.2.0\AndroidManifest.xml:20:5-44
 	android:targetSdkVersion
-		INJECTED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\hleit\Desktop\Semestre03\Mobile\School\src\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Projetos\faculdade\03_semestre\mobile\School\src\app\src\main\AndroidManifest.xml
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\hleit\.gradle\caches\8.13\transforms\70ee45760cd5fd0ceadfd3b0de01055b\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.9.4] C:\Users\hleit\.gradle\caches\8.13\transforms\5bf583d707fc5df2f32f6f365d3b52ec\transformed\lifecycle-process-2.9.4\AndroidManifest.xml:24:9-32:20

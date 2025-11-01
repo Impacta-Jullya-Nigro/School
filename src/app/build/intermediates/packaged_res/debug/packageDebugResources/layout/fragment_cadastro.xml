@@ -20,15 +20,105 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textViewAlunos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="140dp"
         android:text="Alunos"
         android:textAppearance="?attr/textAppearanceBodyMedium"
         app:layout_constraintEnd_toEndOf="@+id/imageButtonAlunos"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="@+id/imageButtonAlunos"
         app:layout_constraintTop_toTopOf="@+id/imageButtonAlunos" />
 
+    <ImageButton
+        android:id="@+id/imageButtonResponsaveis"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Responsaveis"
+        android:scaleType="fitStart"
+        android:src="@drawable/responsaveis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonAlunos"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewResponsaveis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="Responsáveis"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonResponsaveis"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonResponsaveis"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonResponsaveis" />
+
+    <ImageButton
+        android:id="@+id/imageButtonTurma"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="Turma"
+        android:scaleType="fitStart"
+        android:src="@drawable/turma"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonAlunos" />
+
+    <TextView
+        android:id="@+id/textViewTurma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="Turma"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonTurma"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonTurma"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonTurma" />
+
+    <ImageButton
+        android:id="@+id/imageButtonEscola"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="Escola"
+        android:scaleType="fitStart"
+        android:src="@drawable/escola"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonTurma"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonResponsaveis" />
+
+    <TextView
+        android:id="@+id/textViewEscola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="Escola"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonEscola"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonEscola"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonEscola" />
+
+    <ImageButton
+        android:id="@+id/imageButtonCondutores"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="Condutores"
+        android:scaleType="fitStart"
+        android:src="@drawable/condutor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonTurma" />
+
+    <TextView
+        android:id="@+id/textViewCondutores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="Condutores"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonCondutores"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonCondutores"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonCondutores" />
 </androidx.constraintlayout.widget.ConstraintLayout>

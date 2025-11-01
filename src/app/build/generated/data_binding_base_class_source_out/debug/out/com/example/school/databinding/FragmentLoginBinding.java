@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -24,6 +25,9 @@ public final class FragmentLoginBinding implements ViewBinding {
   public final EditText email;
 
   @NonNull
+  public final ImageView imageView;
+
+  @NonNull
   public final Button listUsersButton;
 
   @NonNull
@@ -36,10 +40,11 @@ public final class FragmentLoginBinding implements ViewBinding {
   public final Button register;
 
   private FragmentLoginBinding(@NonNull ConstraintLayout rootView, @NonNull EditText email,
-      @NonNull Button listUsersButton, @NonNull Button login, @NonNull EditText password,
-      @NonNull Button register) {
+      @NonNull ImageView imageView, @NonNull Button listUsersButton, @NonNull Button login,
+      @NonNull EditText password, @NonNull Button register) {
     this.rootView = rootView;
     this.email = email;
+    this.imageView = imageView;
     this.listUsersButton = listUsersButton;
     this.login = login;
     this.password = password;
@@ -79,6 +84,12 @@ public final class FragmentLoginBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imageView;
+      ImageView imageView = ViewBindings.findChildViewById(rootView, id);
+      if (imageView == null) {
+        break missingId;
+      }
+
       id = R.id.list_users_button;
       Button listUsersButton = ViewBindings.findChildViewById(rootView, id);
       if (listUsersButton == null) {
@@ -103,8 +114,8 @@ public final class FragmentLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentLoginBinding((ConstraintLayout) rootView, email, listUsersButton, login,
-          password, register);
+      return new FragmentLoginBinding((ConstraintLayout) rootView, email, imageView,
+          listUsersButton, login, password, register);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
