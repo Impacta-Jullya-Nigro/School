@@ -3691,6 +3691,8 @@ drawable ic_call_decline
 drawable ic_call_decline_low
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
+drawable ic_delete
+drawable ic_edit
 drawable ic_expand_less_22px
 drawable ic_expand_more_22px
 drawable ic_keyboard_black_24dp
@@ -3848,10 +3850,12 @@ id action_bar_root
 id action_bar_spinner
 id action_bar_subtitle
 id action_bar_title
+id action_cadastrarCondutoresFragment_to_listarCondutoresFragment
 id action_container
 id action_context_bar
 id action_divider
 id action_image
+id action_listarCondutoresFragment_to_cadastrarCondutoresFragment
 id action_loginFragment_to_nav_home
 id action_loginFragment_to_registerFragment
 id action_loginFragment_to_userListFragment
@@ -3957,6 +3961,7 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id delete_button
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -3987,6 +3992,7 @@ id easeInOut
 id easeOut
 id east
 id edge
+id edit_button
 id edit_query
 id edit_text_id
 id edit_text_idade
@@ -4074,6 +4080,8 @@ id linear
 id listMode
 id list_item
 id list_users_button
+id listarCondutoresFragment
+id listar_condutores
 id locale
 id login
 id loginFragment
@@ -4162,6 +4170,7 @@ id neverCompleteToEnd
 id neverCompleteToStart
 id noScroll
 id noState
+id nome_condutor
 id none
 id normal
 id north
@@ -4204,6 +4213,7 @@ id pathRelative
 id peekHeight
 id percent
 id pin
+id placa_veiculo_condutor
 id position
 id postLayout
 id preferences_detail
@@ -4216,6 +4226,7 @@ id radio
 id ratio
 id rectangles
 id recycler_view
+id recycler_view_condutores
 id recycler_view_users
 id register
 id registerFragment
@@ -4229,6 +4240,7 @@ id right_side
 id rounded
 id row_index_key
 id rtl
+id salvar_condutor
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -4313,6 +4325,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id telefone_condutor
 id text
 id text2
 id textEnd
@@ -4533,6 +4546,7 @@ layout fragment_cadastrar_responsaveis
 layout fragment_cadastrar_turma
 layout fragment_cadastro
 layout fragment_home
+layout fragment_listar_condutores
 layout fragment_login
 layout fragment_register
 layout fragment_slideshow
@@ -4540,6 +4554,7 @@ layout fragment_user_list
 layout image_frame
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_condutor
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

@@ -18,6 +18,8 @@ drawable account
 drawable alunos
 drawable condutor
 drawable escola
+drawable ic_delete
+drawable ic_edit
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_menu_cadastro
@@ -27,6 +29,8 @@ drawable ic_person
 drawable responsaveis
 drawable side_nav_bar
 drawable turma
+id action_cadastrarCondutoresFragment_to_listarCondutoresFragment
+id action_listarCondutoresFragment_to_cadastrarCondutoresFragment
 id action_loginFragment_to_nav_home
 id action_loginFragment_to_registerFragment
 id action_loginFragment_to_userListFragment
@@ -45,7 +49,9 @@ id cadastrarCondutoresFragment
 id cadastrarEscolaFragment
 id cadastrarResponsavelFragment
 id cadastrarTurmaFragment
+id delete_button
 id drawer_layout
+id edit_button
 id edit_text_idade
 id edit_text_nome
 id edit_text_professor
@@ -59,6 +65,8 @@ id imageButtonResponsaveis
 id imageButtonTurma
 id imageView
 id list_users_button
+id listarCondutoresFragment
+id listar_condutores
 id login
 id loginFragment
 id mobile_navigation
@@ -69,10 +77,15 @@ id nav_home
 id nav_host_fragment_content_main
 id nav_slideshow
 id nav_view
+id nome_condutor
 id password
+id placa_veiculo_condutor
+id recycler_view_condutores
 id recycler_view_users
 id register
 id registerFragment
+id salvar_condutor
+id telefone_condutor
 id textView
 id textViewAlunos
 id textViewCondutores
@@ -95,10 +108,12 @@ layout fragment_cadastrar_responsaveis
 layout fragment_cadastrar_turma
 layout fragment_cadastro
 layout fragment_home
+layout fragment_listar_condutores
 layout fragment_login
 layout fragment_register
 layout fragment_slideshow
 layout fragment_user_list
+layout item_condutor
 layout nav_header_main
 layout user_list_item
 menu activity_main_drawer

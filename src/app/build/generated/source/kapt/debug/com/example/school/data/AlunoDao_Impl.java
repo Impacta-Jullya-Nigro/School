@@ -123,7 +123,7 @@ public final class AlunoDao_Impl implements AlunoDao {
   }
 
   @Override
-  public Object insert(final Aluno aluno, final Continuation<? super Unit> arg1) {
+  public Object insert(final Aluno aluno, final Continuation<? super Unit> $completion) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       @NonNull
@@ -137,11 +137,11 @@ public final class AlunoDao_Impl implements AlunoDao {
           __db.endTransaction();
         }
       }
-    }, arg1);
+    }, $completion);
   }
 
   @Override
-  public Object delete(final Aluno aluno, final Continuation<? super Unit> arg1) {
+  public Object delete(final Aluno aluno, final Continuation<? super Unit> $completion) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       @NonNull
@@ -155,11 +155,11 @@ public final class AlunoDao_Impl implements AlunoDao {
           __db.endTransaction();
         }
       }
-    }, arg1);
+    }, $completion);
   }
 
   @Override
-  public Object update(final Aluno aluno, final Continuation<? super Unit> arg1) {
+  public Object update(final Aluno aluno, final Continuation<? super Unit> $completion) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       @NonNull
@@ -173,7 +173,7 @@ public final class AlunoDao_Impl implements AlunoDao {
           __db.endTransaction();
         }
       }
-    }, arg1);
+    }, $completion);
   }
 
   @Override

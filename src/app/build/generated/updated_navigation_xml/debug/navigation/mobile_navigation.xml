@@ -99,6 +99,28 @@ app:startDestination="@id/loginFragment" >
 <fragment
     android:id="@+id/cadastrarCondutoresFragment"
     android:name="com.example.school.CadastrarCondutoresFragment"
-    android:label="fragment_cadastrar_condutores"
-    tools:layout="@layout/fragment_cadastrar_condutores" />
+    android:label="Cadastro de Condutores"
+    tools:layout="@layout/fragment_cadastrar_condutores" >
+
+    <argument
+        android:name="condutorId"
+        android:defaultValue="-1"
+        app:argType="integer" />
+
+    <action
+        android:id="@+id/action_cadastrarCondutoresFragment_to_listarCondutoresFragment"
+        app:destination="@id/listarCondutoresFragment" />
+
+</fragment>
+<fragment
+    android:id="@+id/listarCondutoresFragment"
+    android:name="com.example.school.ListarCondutoresFragment"
+    android:label="Condutores"
+    tools:layout="@layout/fragment_listar_condutores" >
+
+    <action
+        android:id="@+id/action_listarCondutoresFragment_to_cadastrarCondutoresFragment"
+        app:destination="@id/cadastrarCondutoresFragment" />
+
+</fragment>
 </navigation>
