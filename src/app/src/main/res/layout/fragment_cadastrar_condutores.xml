@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     android:fillViewport="true"
     tools:context=".CadastrarCondutoresFragment">
 
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:padding="24dp">
 
+<<<<<<< HEAD
         <TextView
             android:id="@+id/text_view_title"
             android:layout_width="wrap_content"
@@ -21,6 +23,58 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
+=======
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Nome">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nome_condutor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Telefone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/telefone_condutor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:hint="Placa do Veículo">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/placa_veiculo_condutor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/salvar_condutor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar" />
+
+        <Button
+            android:id="@+id/listar_condutores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Listar Condutores" />
+>>>>>>> 32522647552eaf3437a1ad301fed80a1ea22492c
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/input_layout_nome"

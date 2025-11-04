@@ -65,7 +65,7 @@ public final class UserDao_Impl implements UserDao {
   }
 
   @Override
-  public Object insert(final User user, final Continuation<? super Unit> arg1) {
+  public Object insert(final User user, final Continuation<? super Unit> $completion) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       @NonNull
@@ -79,12 +79,12 @@ public final class UserDao_Impl implements UserDao {
           __db.endTransaction();
         }
       }
-    }, arg1);
+    }, $completion);
   }
 
   @Override
   public Object login(final String email, final String password,
-      final Continuation<? super User> arg2) {
+      final Continuation<? super User> $completion) {
     final String _sql = "SELECT * FROM users WHERE email = ? AND password = ?";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 2);
     int _argIndex = 1;
@@ -142,11 +142,11 @@ public final class UserDao_Impl implements UserDao {
           _statement.release();
         }
       }
-    }, arg2);
+    }, $completion);
   }
 
   @Override
-  public Object getAllUsers(final Continuation<? super List<User>> arg0) {
+  public Object getAllUsers(final Continuation<? super List<User>> $completion) {
     final String _sql = "SELECT * FROM users";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
     final CancellationSignal _cancellationSignal = DBUtil.createCancellationSignal();
@@ -192,7 +192,7 @@ public final class UserDao_Impl implements UserDao {
           _statement.release();
         }
       }
-    }, arg0);
+    }, $completion);
   }
 
   @NonNull

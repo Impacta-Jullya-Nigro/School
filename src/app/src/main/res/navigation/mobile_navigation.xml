@@ -117,12 +117,17 @@
     <fragment
         android:id="@+id/cadastrarCondutoresFragment"
         android:name="com.example.school.CadastrarCondutoresFragment"
+<<<<<<< HEAD
         android:label="Cadastrar Condutor"
+=======
+        android:label="Cadastro de Condutores"
+>>>>>>> 32522647552eaf3437a1ad301fed80a1ea22492c
         tools:layout="@layout/fragment_cadastrar_condutores">
         <argument
             android:name="condutorId"
             app:argType="integer"
             android:defaultValue="-1" />
+<<<<<<< HEAD
     </fragment>
 
     <fragment
@@ -240,4 +245,19 @@
             app:destination="@id/cadastrarCondutoresFragment" />
     </fragment>
 
+=======
+        <action
+            android:id="@+id/action_cadastrarCondutoresFragment_to_listarCondutoresFragment"
+            app:destination="@id/listarCondutoresFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listarCondutoresFragment"
+        android:name="com.example.school.ListarCondutoresFragment"
+        android:label="Condutores"
+        tools:layout="@layout/fragment_listar_condutores">
+        <action
+            android:id="@+id/action_listarCondutoresFragment_to_cadastrarCondutoresFragment"
+            app:destination="@id/cadastrarCondutoresFragment" />
+    </fragment>
+>>>>>>> 32522647552eaf3437a1ad301fed80a1ea22492c
 </navigation>

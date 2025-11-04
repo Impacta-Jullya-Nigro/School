@@ -4,6 +4,7 @@
             "outputFile": "com.example.school.app-mergeDebugResources-52:/values-land/values-land.xml",
             "map": [
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\jully\\Desktop\\School\\src\\app\\src\\main\\res\\values-land\\dimens.xml",
                     "from": {
                         "startLines": "1",
@@ -22,6 +23,9 @@
                 },
                 {
                     "source": "C:\\Users\\jully\\.gradle\\caches\\8.13\\transforms\\d3f25401a004537824eadd1e7342b892\\transformed\\appcompat-1.7.1\\res\\values-land\\values-land.xml",
+=======
+                    "source": "C:\\Users\\Pichau\\.gradle\\caches\\8.13\\transforms\\19345094fe66087c2294ffb193f3f15a\\transformed\\appcompat-1.7.1\\res\\values-land\\values-land.xml",
+>>>>>>> 32522647552eaf3437a1ad301fed80a1ea22492c
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -31,7 +35,11 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\jully\\.gradle\\caches\\8.13\\transforms\\5402053d1d5b72109ea122ce9f57d3ae\\transformed\\material-1.13.0\\res\\values-land\\values-land.xml",
+=======
+                    "source": "C:\\Users\\Pichau\\.gradle\\caches\\8.13\\transforms\\6dc41cd571c9eb3a305c4022e9ea40b7\\transformed\\material-1.13.0\\res\\values-land\\values-land.xml",
+>>>>>>> 32522647552eaf3437a1ad301fed80a1ea22492c
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,22,31,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -47,6 +55,23 @@
                         "endLines": "6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,25,34,39,42",
                         "endColumns": "74,73,64,66,69,71,68,68,81,89,75,67,66,77,64,66,10,10,10,10",
                         "endOffsets": "376,450,515,582,652,724,793,862,944,1034,1110,1178,1245,1323,1388,1455,1627,2196,2465,2693"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Pichau\\Desktop\\School\\src\\app\\src\\main\\res\\values-land\\dimens.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "17",
+                        "endColumns": "41",
+                        "endOffsets": "54"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "264",
+                        "endColumns": "41",
+                        "endOffsets": "301"
                     }
                 }
             ]

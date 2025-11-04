@@ -4,7 +4,11 @@
             "outputFile": "com.example.school.app-mergeDebugResources-52:/values-large-v4/values-large-v4.xml",
             "map": [
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\jully\\.gradle\\caches\\8.13\\transforms\\d3f25401a004537824eadd1e7342b892\\transformed\\appcompat-1.7.1\\res\\values-large-v4\\values-large-v4.xml",
+=======
+                    "source": "C:\\Users\\Pichau\\.gradle\\caches\\8.13\\transforms\\19345094fe66087c2294ffb193f3f15a\\transformed\\appcompat-1.7.1\\res\\values-large-v4\\values-large-v4.xml",
+>>>>>>> 32522647552eaf3437a1ad301fed80a1ea22492c
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -14,7 +18,11 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\jully\\.gradle\\caches\\8.13\\transforms\\5402053d1d5b72109ea122ce9f57d3ae\\transformed\\material-1.13.0\\res\\values-large-v4\\values-large-v4.xml",
+=======
+                    "source": "C:\\Users\\Pichau\\.gradle\\caches\\8.13\\transforms\\6dc41cd571c9eb3a305c4022e9ea40b7\\transformed\\material-1.13.0\\res\\values-large-v4\\values-large-v4.xml",
+>>>>>>> 32522647552eaf3437a1ad301fed80a1ea22492c
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

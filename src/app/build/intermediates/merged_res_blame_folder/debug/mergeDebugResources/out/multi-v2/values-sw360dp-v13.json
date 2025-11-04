@@ -4,7 +4,11 @@
             "outputFile": "com.example.school.app-mergeDebugResources-52:/values-sw360dp-v13/values-sw360dp-v13.xml",
             "map": [
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\jully\\.gradle\\caches\\8.13\\transforms\\3b8a3d51d4ffa06f81a3fa37629a4c2d\\transformed\\preference-1.2.1\\res\\values-sw360dp-v13\\values-sw360dp-v13.xml",
+=======
+                    "source": "C:\\Users\\Pichau\\.gradle\\caches\\8.13\\transforms\\5bf0f646acddc8ca8196cf47e9496e95\\transformed\\preference-1.2.1\\res\\values-sw360dp-v13\\values-sw360dp-v13.xml",
+>>>>>>> 32522647552eaf3437a1ad301fed80a1ea22492c
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

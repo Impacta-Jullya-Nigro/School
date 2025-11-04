@@ -127,7 +127,11 @@ app:startDestination="@id/loginFragment" >
 <fragment
     android:id="@+id/cadastrarCondutoresFragment"
     android:name="com.example.school.CadastrarCondutoresFragment"
+<<<<<<< HEAD
     android:label="Cadastrar Condutor"
+=======
+    android:label="Cadastro de Condutores"
+>>>>>>> 32522647552eaf3437a1ad301fed80a1ea22492c
     tools:layout="@layout/fragment_cadastrar_condutores" >
 
     <argument
@@ -135,6 +139,7 @@ app:startDestination="@id/loginFragment" >
         android:defaultValue="-1"
         app:argType="integer" />
 
+<<<<<<< HEAD
 </fragment>
 <fragment
     android:id="@+id/alunoOptionsFragment"
@@ -258,6 +263,21 @@ app:startDestination="@id/loginFragment" >
 
     <action
         android:id="@+id/action_editarCondutoresFragment_to_cadastrarCondutoresFragment"
+=======
+    <action
+        android:id="@+id/action_cadastrarCondutoresFragment_to_listarCondutoresFragment"
+        app:destination="@id/listarCondutoresFragment" />
+
+</fragment>
+<fragment
+    android:id="@+id/listarCondutoresFragment"
+    android:name="com.example.school.ListarCondutoresFragment"
+    android:label="Condutores"
+    tools:layout="@layout/fragment_listar_condutores" >
+
+    <action
+        android:id="@+id/action_listarCondutoresFragment_to_cadastrarCondutoresFragment"
+>>>>>>> 32522647552eaf3437a1ad301fed80a1ea22492c
         app:destination="@id/cadastrarCondutoresFragment" />
 
 </fragment>
