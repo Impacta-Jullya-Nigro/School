@@ -11,7 +11,9 @@ data class Escola(
     val id: Int = 0,
     val nome: String,
     val endereco: String,
-    val telefone: String,
+    val numero: String,
+    val cep: String,
+    val diretor: String,
     @ColumnInfo(name = "criado_em")
     val criadoEm: Long = System.currentTimeMillis()
 )

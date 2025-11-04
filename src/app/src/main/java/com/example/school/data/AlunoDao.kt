@@ -21,4 +21,7 @@ interface AlunoDao {
 
     @Query("SELECT * from aluno ORDER BY nome ASC")
     fun getAllAlunos(): Flow<List<Aluno>>
+
+    @Query("SELECT * from aluno WHERE id = :id")
+    fun getAluno(id: Int): Flow<Aluno>
 }

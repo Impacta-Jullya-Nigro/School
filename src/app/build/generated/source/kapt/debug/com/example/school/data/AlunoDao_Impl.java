@@ -12,6 +12,7 @@ import androidx.room.util.DBUtil;
 import androidx.sqlite.db.SupportSQLiteStatement;
 import java.lang.Class;
 import java.lang.Exception;
+import java.lang.Integer;
 import java.lang.Object;
 import java.lang.Override;
 import java.lang.String;
@@ -42,7 +43,7 @@ public final class AlunoDao_Impl implements AlunoDao {
       @Override
       @NonNull
       protected String createQuery() {
-        return "INSERT OR ABORT INTO `aluno` (`id`,`nome`,`idade`,`serie`,`turma`,`professor`) VALUES (nullif(?, 0),?,?,?,?,?)";
+        return "INSERT OR ABORT INTO `aluno` (`id`,`nome`,`idade`,`professor`,`turma_id`,`responsavel_id`,`condutor_id`) VALUES (nullif(?, 0),?,?,?,?,?,?)";
       }
 
       @Override
@@ -55,20 +56,25 @@ public final class AlunoDao_Impl implements AlunoDao {
           statement.bindString(2, entity.getNome());
         }
         statement.bindLong(3, entity.getIdade());
-        if (entity.getSerie() == null) {
+        if (entity.getProfessor() == null) {
           statement.bindNull(4);
         } else {
-          statement.bindString(4, entity.getSerie());
+          statement.bindString(4, entity.getProfessor());
         }
-        if (entity.getTurma() == null) {
+        if (entity.getTurmaId() == null) {
           statement.bindNull(5);
         } else {
-          statement.bindString(5, entity.getTurma());
+          statement.bindLong(5, entity.getTurmaId());
         }
-        if (entity.getProfessor() == null) {
+        if (entity.getResponsavelId() == null) {
           statement.bindNull(6);
         } else {
-          statement.bindString(6, entity.getProfessor());
+          statement.bindLong(6, entity.getResponsavelId());
+        }
+        if (entity.getCondutorId() == null) {
+          statement.bindNull(7);
+        } else {
+          statement.bindLong(7, entity.getCondutorId());
         }
       }
     };
@@ -89,7 +95,7 @@ public final class AlunoDao_Impl implements AlunoDao {
       @Override
       @NonNull
       protected String createQuery() {
-        return "UPDATE OR ABORT `aluno` SET `id` = ?,`nome` = ?,`idade` = ?,`serie` = ?,`turma` = ?,`professor` = ? WHERE `id` = ?";
+        return "UPDATE OR ABORT `aluno` SET `id` = ?,`nome` = ?,`idade` = ?,`professor` = ?,`turma_id` = ?,`responsavel_id` = ?,`condutor_id` = ? WHERE `id` = ?";
       }
 
       @Override
@@ -102,28 +108,33 @@ public final class AlunoDao_Impl implements AlunoDao {
           statement.bindString(2, entity.getNome());
         }
         statement.bindLong(3, entity.getIdade());
-        if (entity.getSerie() == null) {
+        if (entity.getProfessor() == null) {
           statement.bindNull(4);
         } else {
-          statement.bindString(4, entity.getSerie());
+          statement.bindString(4, entity.getProfessor());
         }
-        if (entity.getTurma() == null) {
+        if (entity.getTurmaId() == null) {
           statement.bindNull(5);
         } else {
-          statement.bindString(5, entity.getTurma());
+          statement.bindLong(5, entity.getTurmaId());
         }
-        if (entity.getProfessor() == null) {
+        if (entity.getResponsavelId() == null) {
           statement.bindNull(6);
         } else {
-          statement.bindString(6, entity.getProfessor());
+          statement.bindLong(6, entity.getResponsavelId());
         }
-        statement.bindLong(7, entity.getId());
+        if (entity.getCondutorId() == null) {
+          statement.bindNull(7);
+        } else {
+          statement.bindLong(7, entity.getCondutorId());
+        }
+        statement.bindLong(8, entity.getId());
       }
     };
   }
 
   @Override
-  public Object insert(final Aluno aluno, final Continuation<? super Unit> arg1) {
+  public Object insert(final Aluno aluno, final Continuation<? super Unit> $completion) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       @NonNull
@@ -137,11 +148,11 @@ public final class AlunoDao_Impl implements AlunoDao {
           __db.endTransaction();
         }
       }
-    }, arg1);
+    }, $completion);
   }
 
   @Override
-  public Object delete(final Aluno aluno, final Continuation<? super Unit> arg1) {
+  public Object delete(final Aluno aluno, final Continuation<? super Unit> $completion) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       @NonNull
@@ -155,11 +166,11 @@ public final class AlunoDao_Impl implements AlunoDao {
           __db.endTransaction();
         }
       }
-    }, arg1);
+    }, $completion);
   }
 
   @Override
-  public Object update(final Aluno aluno, final Continuation<? super Unit> arg1) {
+  public Object update(final Aluno aluno, final Continuation<? super Unit> $completion) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       @NonNull
@@ -173,7 +184,7 @@ public final class AlunoDao_Impl implements AlunoDao {
           __db.endTransaction();
         }
       }
-    }, arg1);
+    }, $completion);
   }
 
   @Override
@@ -189,9 +200,10 @@ public final class AlunoDao_Impl implements AlunoDao {
           final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
           final int _cursorIndexOfNome = CursorUtil.getColumnIndexOrThrow(_cursor, "nome");
           final int _cursorIndexOfIdade = CursorUtil.getColumnIndexOrThrow(_cursor, "idade");
-          final int _cursorIndexOfSerie = CursorUtil.getColumnIndexOrThrow(_cursor, "serie");
-          final int _cursorIndexOfTurma = CursorUtil.getColumnIndexOrThrow(_cursor, "turma");
           final int _cursorIndexOfProfessor = CursorUtil.getColumnIndexOrThrow(_cursor, "professor");
+          final int _cursorIndexOfTurmaId = CursorUtil.getColumnIndexOrThrow(_cursor, "turma_id");
+          final int _cursorIndexOfResponsavelId = CursorUtil.getColumnIndexOrThrow(_cursor, "responsavel_id");
+          final int _cursorIndexOfCondutorId = CursorUtil.getColumnIndexOrThrow(_cursor, "condutor_id");
           final List<Aluno> _result = new ArrayList<Aluno>(_cursor.getCount());
           while (_cursor.moveToNext()) {
             final Aluno _item;
@@ -205,26 +217,104 @@ public final class AlunoDao_Impl implements AlunoDao {
             }
             final int _tmpIdade;
             _tmpIdade = _cursor.getInt(_cursorIndexOfIdade);
-            final String _tmpSerie;
-            if (_cursor.isNull(_cursorIndexOfSerie)) {
-              _tmpSerie = null;
-            } else {
-              _tmpSerie = _cursor.getString(_cursorIndexOfSerie);
-            }
-            final String _tmpTurma;
-            if (_cursor.isNull(_cursorIndexOfTurma)) {
-              _tmpTurma = null;
-            } else {
-              _tmpTurma = _cursor.getString(_cursorIndexOfTurma);
-            }
             final String _tmpProfessor;
             if (_cursor.isNull(_cursorIndexOfProfessor)) {
               _tmpProfessor = null;
             } else {
               _tmpProfessor = _cursor.getString(_cursorIndexOfProfessor);
             }
-            _item = new Aluno(_tmpId,_tmpNome,_tmpIdade,_tmpSerie,_tmpTurma,_tmpProfessor);
+            final Integer _tmpTurmaId;
+            if (_cursor.isNull(_cursorIndexOfTurmaId)) {
+              _tmpTurmaId = null;
+            } else {
+              _tmpTurmaId = _cursor.getInt(_cursorIndexOfTurmaId);
+            }
+            final Integer _tmpResponsavelId;
+            if (_cursor.isNull(_cursorIndexOfResponsavelId)) {
+              _tmpResponsavelId = null;
+            } else {
+              _tmpResponsavelId = _cursor.getInt(_cursorIndexOfResponsavelId);
+            }
+            final Integer _tmpCondutorId;
+            if (_cursor.isNull(_cursorIndexOfCondutorId)) {
+              _tmpCondutorId = null;
+            } else {
+              _tmpCondutorId = _cursor.getInt(_cursorIndexOfCondutorId);
+            }
+            _item = new Aluno(_tmpId,_tmpNome,_tmpIdade,_tmpProfessor,_tmpTurmaId,_tmpResponsavelId,_tmpCondutorId);
             _result.add(_item);
+          }
+          return _result;
+        } finally {
+          _cursor.close();
+        }
+      }
+
+      @Override
+      protected void finalize() {
+        _statement.release();
+      }
+    });
+  }
+
+  @Override
+  public Flow<Aluno> getAluno(final int id) {
+    final String _sql = "SELECT * from aluno WHERE id = ?";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
+    _statement.bindLong(_argIndex, id);
+    return CoroutinesRoom.createFlow(__db, false, new String[] {"aluno"}, new Callable<Aluno>() {
+      @Override
+      @NonNull
+      public Aluno call() throws Exception {
+        final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+        try {
+          final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
+          final int _cursorIndexOfNome = CursorUtil.getColumnIndexOrThrow(_cursor, "nome");
+          final int _cursorIndexOfIdade = CursorUtil.getColumnIndexOrThrow(_cursor, "idade");
+          final int _cursorIndexOfProfessor = CursorUtil.getColumnIndexOrThrow(_cursor, "professor");
+          final int _cursorIndexOfTurmaId = CursorUtil.getColumnIndexOrThrow(_cursor, "turma_id");
+          final int _cursorIndexOfResponsavelId = CursorUtil.getColumnIndexOrThrow(_cursor, "responsavel_id");
+          final int _cursorIndexOfCondutorId = CursorUtil.getColumnIndexOrThrow(_cursor, "condutor_id");
+          final Aluno _result;
+          if (_cursor.moveToFirst()) {
+            final int _tmpId;
+            _tmpId = _cursor.getInt(_cursorIndexOfId);
+            final String _tmpNome;
+            if (_cursor.isNull(_cursorIndexOfNome)) {
+              _tmpNome = null;
+            } else {
+              _tmpNome = _cursor.getString(_cursorIndexOfNome);
+            }
+            final int _tmpIdade;
+            _tmpIdade = _cursor.getInt(_cursorIndexOfIdade);
+            final String _tmpProfessor;
+            if (_cursor.isNull(_cursorIndexOfProfessor)) {
+              _tmpProfessor = null;
+            } else {
+              _tmpProfessor = _cursor.getString(_cursorIndexOfProfessor);
+            }
+            final Integer _tmpTurmaId;
+            if (_cursor.isNull(_cursorIndexOfTurmaId)) {
+              _tmpTurmaId = null;
+            } else {
+              _tmpTurmaId = _cursor.getInt(_cursorIndexOfTurmaId);
+            }
+            final Integer _tmpResponsavelId;
+            if (_cursor.isNull(_cursorIndexOfResponsavelId)) {
+              _tmpResponsavelId = null;
+            } else {
+              _tmpResponsavelId = _cursor.getInt(_cursorIndexOfResponsavelId);
+            }
+            final Integer _tmpCondutorId;
+            if (_cursor.isNull(_cursorIndexOfCondutorId)) {
+              _tmpCondutorId = null;
+            } else {
+              _tmpCondutorId = _cursor.getInt(_cursorIndexOfCondutorId);
+            }
+            _result = new Aluno(_tmpId,_tmpNome,_tmpIdade,_tmpProfessor,_tmpTurmaId,_tmpResponsavelId,_tmpCondutorId);
+          } else {
+            _result = null;
           }
           return _result;
         } finally {

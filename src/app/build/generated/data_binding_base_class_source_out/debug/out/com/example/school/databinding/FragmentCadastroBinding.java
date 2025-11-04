@@ -4,11 +4,10 @@ package com.example.school.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.GridLayout;
 import android.widget.ImageButton;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.school.R;
@@ -18,7 +17,7 @@ import java.lang.String;
 
 public final class FragmentCadastroBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final GridLayout rootView;
 
   @NonNull
   public final ImageButton imageButtonAlunos;
@@ -35,43 +34,21 @@ public final class FragmentCadastroBinding implements ViewBinding {
   @NonNull
   public final ImageButton imageButtonTurma;
 
-  @NonNull
-  public final TextView textViewAlunos;
-
-  @NonNull
-  public final TextView textViewCondutores;
-
-  @NonNull
-  public final TextView textViewEscola;
-
-  @NonNull
-  public final TextView textViewResponsaveis;
-
-  @NonNull
-  public final TextView textViewTurma;
-
-  private FragmentCadastroBinding(@NonNull ConstraintLayout rootView,
+  private FragmentCadastroBinding(@NonNull GridLayout rootView,
       @NonNull ImageButton imageButtonAlunos, @NonNull ImageButton imageButtonCondutores,
       @NonNull ImageButton imageButtonEscola, @NonNull ImageButton imageButtonResponsaveis,
-      @NonNull ImageButton imageButtonTurma, @NonNull TextView textViewAlunos,
-      @NonNull TextView textViewCondutores, @NonNull TextView textViewEscola,
-      @NonNull TextView textViewResponsaveis, @NonNull TextView textViewTurma) {
+      @NonNull ImageButton imageButtonTurma) {
     this.rootView = rootView;
     this.imageButtonAlunos = imageButtonAlunos;
     this.imageButtonCondutores = imageButtonCondutores;
     this.imageButtonEscola = imageButtonEscola;
     this.imageButtonResponsaveis = imageButtonResponsaveis;
     this.imageButtonTurma = imageButtonTurma;
-    this.textViewAlunos = textViewAlunos;
-    this.textViewCondutores = textViewCondutores;
-    this.textViewEscola = textViewEscola;
-    this.textViewResponsaveis = textViewResponsaveis;
-    this.textViewTurma = textViewTurma;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public GridLayout getRoot() {
     return rootView;
   }
 
@@ -126,39 +103,8 @@ public final class FragmentCadastroBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textViewAlunos;
-      TextView textViewAlunos = ViewBindings.findChildViewById(rootView, id);
-      if (textViewAlunos == null) {
-        break missingId;
-      }
-
-      id = R.id.textViewCondutores;
-      TextView textViewCondutores = ViewBindings.findChildViewById(rootView, id);
-      if (textViewCondutores == null) {
-        break missingId;
-      }
-
-      id = R.id.textViewEscola;
-      TextView textViewEscola = ViewBindings.findChildViewById(rootView, id);
-      if (textViewEscola == null) {
-        break missingId;
-      }
-
-      id = R.id.textViewResponsaveis;
-      TextView textViewResponsaveis = ViewBindings.findChildViewById(rootView, id);
-      if (textViewResponsaveis == null) {
-        break missingId;
-      }
-
-      id = R.id.textViewTurma;
-      TextView textViewTurma = ViewBindings.findChildViewById(rootView, id);
-      if (textViewTurma == null) {
-        break missingId;
-      }
-
-      return new FragmentCadastroBinding((ConstraintLayout) rootView, imageButtonAlunos,
-          imageButtonCondutores, imageButtonEscola, imageButtonResponsaveis, imageButtonTurma,
-          textViewAlunos, textViewCondutores, textViewEscola, textViewResponsaveis, textViewTurma);
+      return new FragmentCadastroBinding((GridLayout) rootView, imageButtonAlunos,
+          imageButtonCondutores, imageButtonEscola, imageButtonResponsaveis, imageButtonTurma);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

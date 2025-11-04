@@ -11,6 +11,7 @@ data class Responsavel(
     val id: Int = 0,
     val nome: String,
     val telefone: String,
+    val email: String,
     @ColumnInfo(name = "criado_em")
     val criadoEm: Long = System.currentTimeMillis()
 )

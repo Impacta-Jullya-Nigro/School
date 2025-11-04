@@ -6,12 +6,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ScrollView;
+import android.widget.Spinner;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.school.R;
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -33,22 +36,58 @@ public final class FragmentCadastrarAlunoBinding implements ViewBinding {
   public final TextInputEditText editTextProfessor;
 
   @NonNull
-  public final TextInputEditText editTextSerie;
+  public final TextInputLayout inputLayoutIdade;
 
   @NonNull
-  public final TextInputEditText editTextTurma;
+  public final TextInputLayout inputLayoutNome;
+
+  @NonNull
+  public final TextInputLayout inputLayoutProfessor;
+
+  @NonNull
+  public final TextView labelCondutor;
+
+  @NonNull
+  public final TextView labelResponsavel;
+
+  @NonNull
+  public final TextView labelTurma;
+
+  @NonNull
+  public final Spinner spinnerCondutores;
+
+  @NonNull
+  public final Spinner spinnerResponsaveis;
+
+  @NonNull
+  public final Spinner spinnerTurmas;
+
+  @NonNull
+  public final TextView textViewTitle;
 
   private FragmentCadastrarAlunoBinding(@NonNull ScrollView rootView, @NonNull Button buttonSalvar,
       @NonNull TextInputEditText editTextIdade, @NonNull TextInputEditText editTextNome,
-      @NonNull TextInputEditText editTextProfessor, @NonNull TextInputEditText editTextSerie,
-      @NonNull TextInputEditText editTextTurma) {
+      @NonNull TextInputEditText editTextProfessor, @NonNull TextInputLayout inputLayoutIdade,
+      @NonNull TextInputLayout inputLayoutNome, @NonNull TextInputLayout inputLayoutProfessor,
+      @NonNull TextView labelCondutor, @NonNull TextView labelResponsavel,
+      @NonNull TextView labelTurma, @NonNull Spinner spinnerCondutores,
+      @NonNull Spinner spinnerResponsaveis, @NonNull Spinner spinnerTurmas,
+      @NonNull TextView textViewTitle) {
     this.rootView = rootView;
     this.buttonSalvar = buttonSalvar;
     this.editTextIdade = editTextIdade;
     this.editTextNome = editTextNome;
     this.editTextProfessor = editTextProfessor;
-    this.editTextSerie = editTextSerie;
-    this.editTextTurma = editTextTurma;
+    this.inputLayoutIdade = inputLayoutIdade;
+    this.inputLayoutNome = inputLayoutNome;
+    this.inputLayoutProfessor = inputLayoutProfessor;
+    this.labelCondutor = labelCondutor;
+    this.labelResponsavel = labelResponsavel;
+    this.labelTurma = labelTurma;
+    this.spinnerCondutores = spinnerCondutores;
+    this.spinnerResponsaveis = spinnerResponsaveis;
+    this.spinnerTurmas = spinnerTurmas;
+    this.textViewTitle = textViewTitle;
   }
 
   @Override
@@ -78,44 +117,94 @@ public final class FragmentCadastrarAlunoBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button_salvar;
+      id = R.id.buttonSalvar;
       Button buttonSalvar = ViewBindings.findChildViewById(rootView, id);
       if (buttonSalvar == null) {
         break missingId;
       }
 
-      id = R.id.edit_text_idade;
+      id = R.id.editTextIdade;
       TextInputEditText editTextIdade = ViewBindings.findChildViewById(rootView, id);
       if (editTextIdade == null) {
         break missingId;
       }
 
-      id = R.id.edit_text_nome;
+      id = R.id.editTextNome;
       TextInputEditText editTextNome = ViewBindings.findChildViewById(rootView, id);
       if (editTextNome == null) {
         break missingId;
       }
 
-      id = R.id.edit_text_professor;
+      id = R.id.editTextProfessor;
       TextInputEditText editTextProfessor = ViewBindings.findChildViewById(rootView, id);
       if (editTextProfessor == null) {
         break missingId;
       }
 
-      id = R.id.edit_text_serie;
-      TextInputEditText editTextSerie = ViewBindings.findChildViewById(rootView, id);
-      if (editTextSerie == null) {
+      id = R.id.input_layout_idade;
+      TextInputLayout inputLayoutIdade = ViewBindings.findChildViewById(rootView, id);
+      if (inputLayoutIdade == null) {
         break missingId;
       }
 
-      id = R.id.edit_text_turma;
-      TextInputEditText editTextTurma = ViewBindings.findChildViewById(rootView, id);
-      if (editTextTurma == null) {
+      id = R.id.input_layout_nome;
+      TextInputLayout inputLayoutNome = ViewBindings.findChildViewById(rootView, id);
+      if (inputLayoutNome == null) {
+        break missingId;
+      }
+
+      id = R.id.input_layout_professor;
+      TextInputLayout inputLayoutProfessor = ViewBindings.findChildViewById(rootView, id);
+      if (inputLayoutProfessor == null) {
+        break missingId;
+      }
+
+      id = R.id.label_condutor;
+      TextView labelCondutor = ViewBindings.findChildViewById(rootView, id);
+      if (labelCondutor == null) {
+        break missingId;
+      }
+
+      id = R.id.label_responsavel;
+      TextView labelResponsavel = ViewBindings.findChildViewById(rootView, id);
+      if (labelResponsavel == null) {
+        break missingId;
+      }
+
+      id = R.id.label_turma;
+      TextView labelTurma = ViewBindings.findChildViewById(rootView, id);
+      if (labelTurma == null) {
+        break missingId;
+      }
+
+      id = R.id.spinner_condutores;
+      Spinner spinnerCondutores = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerCondutores == null) {
+        break missingId;
+      }
+
+      id = R.id.spinner_responsaveis;
+      Spinner spinnerResponsaveis = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerResponsaveis == null) {
+        break missingId;
+      }
+
+      id = R.id.spinner_turmas;
+      Spinner spinnerTurmas = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerTurmas == null) {
+        break missingId;
+      }
+
+      id = R.id.text_view_title;
+      TextView textViewTitle = ViewBindings.findChildViewById(rootView, id);
+      if (textViewTitle == null) {
         break missingId;
       }
 
       return new FragmentCadastrarAlunoBinding((ScrollView) rootView, buttonSalvar, editTextIdade,
-          editTextNome, editTextProfessor, editTextSerie, editTextTurma);
+          editTextNome, editTextProfessor, inputLayoutIdade, inputLayoutNome, inputLayoutProfessor,
+          labelCondutor, labelResponsavel, labelTurma, spinnerCondutores, spinnerResponsaveis,
+          spinnerTurmas, textViewTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -27,23 +27,23 @@ class CadastroFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.imageButtonAlunos.setOnClickListener {
-            findNavController().navigate(R.id.action_nav_gallery_to_cadastrarAlunoFragment)
+            findNavController().navigate(R.id.action_nav_cadastro_to_alunoOptionsFragment)
         }
 
         binding.imageButtonResponsaveis.setOnClickListener {
-            findNavController().navigate(R.id.action_nav_cadastro_to_cadastrarResponsavelFragment)
+            findNavController().navigate(R.id.action_nav_cadastro_to_responsavelOptionsFragment)
         }
 
         binding.imageButtonTurma.setOnClickListener {
-            findNavController().navigate(R.id.action_nav_cadastro_to_cadastrarTurmaFragment)
+            findNavController().navigate(R.id.action_nav_cadastro_to_turmaOptionsFragment)
         }
 
         binding.imageButtonEscola.setOnClickListener {
-            findNavController().navigate(R.id.action_nav_cadastro_to_cadastrarEscolaFragment)
+            findNavController().navigate(R.id.action_nav_cadastro_to_escolaOptionsFragment)
         }
 
         binding.imageButtonCondutores.setOnClickListener {
-            findNavController().navigate(R.id.action_nav_cadastro_to_cadastrarCondutoresFragment)
+            findNavController().navigate(R.id.action_nav_cadastro_to_condutorOptionsFragment)
         }
     }
 

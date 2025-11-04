@@ -14,7 +14,7 @@ import androidx.room.RoomDatabase
     Turma::class,
     CondutorAlunoCrossRef::class,
     AlunoResponsavelCrossRef::class
-], version = 4)
+], version = 13)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun userDao(): UserDao
     abstract fun alunoDao(): AlunoDao

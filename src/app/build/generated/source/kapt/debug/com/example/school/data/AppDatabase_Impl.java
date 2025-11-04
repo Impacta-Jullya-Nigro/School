@@ -42,19 +42,22 @@ public final class AppDatabase_Impl extends AppDatabase {
   @Override
   @NonNull
   protected SupportSQLiteOpenHelper createOpenHelper(@NonNull final DatabaseConfiguration config) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(config, new RoomOpenHelper.Delegate(4) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(config, new RoomOpenHelper.Delegate(13) {
       @Override
       public void createAllTables(@NonNull final SupportSQLiteDatabase db) {
         db.execSQL("CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `nome` TEXT NOT NULL, `email` TEXT NOT NULL, `password` TEXT NOT NULL)");
-        db.execSQL("CREATE TABLE IF NOT EXISTS `aluno` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `nome` TEXT NOT NULL, `idade` INTEGER NOT NULL, `serie` TEXT NOT NULL, `turma` TEXT NOT NULL, `professor` TEXT NOT NULL)");
+        db.execSQL("CREATE TABLE IF NOT EXISTS `aluno` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `nome` TEXT NOT NULL, `idade` INTEGER NOT NULL, `professor` TEXT NOT NULL, `turma_id` INTEGER, `responsavel_id` INTEGER, `condutor_id` INTEGER, FOREIGN KEY(`turma_id`) REFERENCES `turma`(`id_turma`) ON UPDATE NO ACTION ON DELETE SET NULL , FOREIGN KEY(`responsavel_id`) REFERENCES `responsavel`(`id_responsavel`) ON UPDATE NO ACTION ON DELETE SET NULL , FOREIGN KEY(`condutor_id`) REFERENCES `condutor`(`id_condutor`) ON UPDATE NO ACTION ON DELETE SET NULL )");
+        db.execSQL("CREATE INDEX IF NOT EXISTS `index_aluno_turma_id` ON `aluno` (`turma_id`)");
+        db.execSQL("CREATE INDEX IF NOT EXISTS `index_aluno_responsavel_id` ON `aluno` (`responsavel_id`)");
+        db.execSQL("CREATE INDEX IF NOT EXISTS `index_aluno_condutor_id` ON `aluno` (`condutor_id`)");
         db.execSQL("CREATE TABLE IF NOT EXISTS `condutor` (`id_condutor` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `nome` TEXT NOT NULL, `telefone` TEXT NOT NULL, `placa_veiculo` TEXT NOT NULL, `criado_em` INTEGER NOT NULL)");
-        db.execSQL("CREATE TABLE IF NOT EXISTS `responsavel` (`id_responsavel` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `nome` TEXT NOT NULL, `telefone` TEXT NOT NULL, `criado_em` INTEGER NOT NULL)");
-        db.execSQL("CREATE TABLE IF NOT EXISTS `escola` (`id_escola` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `nome` TEXT NOT NULL, `endereco` TEXT NOT NULL, `telefone` TEXT NOT NULL, `criado_em` INTEGER NOT NULL)");
-        db.execSQL("CREATE TABLE IF NOT EXISTS `turma` (`id_turma` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `nome` TEXT NOT NULL, `horario_entrada` TEXT NOT NULL, `horario_saida` TEXT NOT NULL, `id_escola` INTEGER NOT NULL, `criado_em` INTEGER NOT NULL, FOREIGN KEY(`id_escola`) REFERENCES `escola`(`id_escola`) ON UPDATE NO ACTION ON DELETE CASCADE )");
+        db.execSQL("CREATE TABLE IF NOT EXISTS `responsavel` (`id_responsavel` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `nome` TEXT NOT NULL, `telefone` TEXT NOT NULL, `email` TEXT NOT NULL, `criado_em` INTEGER NOT NULL)");
+        db.execSQL("CREATE TABLE IF NOT EXISTS `escola` (`id_escola` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `nome` TEXT NOT NULL, `endereco` TEXT NOT NULL, `numero` TEXT NOT NULL, `cep` TEXT NOT NULL, `diretor` TEXT NOT NULL, `criado_em` INTEGER NOT NULL)");
+        db.execSQL("CREATE TABLE IF NOT EXISTS `turma` (`id_turma` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `turno` TEXT NOT NULL, `serie` TEXT NOT NULL, `nome` TEXT NOT NULL, `criado_em` INTEGER NOT NULL)");
         db.execSQL("CREATE TABLE IF NOT EXISTS `condutor_aluno` (`id_condutor` INTEGER NOT NULL, `id_aluno` INTEGER NOT NULL, `criado_em` INTEGER NOT NULL, PRIMARY KEY(`id_condutor`, `id_aluno`))");
         db.execSQL("CREATE TABLE IF NOT EXISTS `aluno_responsavel` (`id_aluno` INTEGER NOT NULL, `id_responsavel` INTEGER NOT NULL, `criado_em` INTEGER NOT NULL, PRIMARY KEY(`id_aluno`, `id_responsavel`))");
         db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'c544397353e6171a0e9c2a7669ad9199')");
+        db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'e7aa5fc545e3d58b379210b0bcf77c40')");
       }
 
       @Override
@@ -125,15 +128,22 @@ public final class AppDatabase_Impl extends AppDatabase {
                   + " Expected:\n" + _infoUsers + "\n"
                   + " Found:\n" + _existingUsers);
         }
-        final HashMap<String, TableInfo.Column> _columnsAluno = new HashMap<String, TableInfo.Column>(6);
+        final HashMap<String, TableInfo.Column> _columnsAluno = new HashMap<String, TableInfo.Column>(7);
         _columnsAluno.put("id", new TableInfo.Column("id", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsAluno.put("nome", new TableInfo.Column("nome", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsAluno.put("idade", new TableInfo.Column("idade", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsAluno.put("serie", new TableInfo.Column("serie", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsAluno.put("turma", new TableInfo.Column("turma", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsAluno.put("professor", new TableInfo.Column("professor", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        final HashSet<TableInfo.ForeignKey> _foreignKeysAluno = new HashSet<TableInfo.ForeignKey>(0);
-        final HashSet<TableInfo.Index> _indicesAluno = new HashSet<TableInfo.Index>(0);
+        _columnsAluno.put("turma_id", new TableInfo.Column("turma_id", "INTEGER", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsAluno.put("responsavel_id", new TableInfo.Column("responsavel_id", "INTEGER", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsAluno.put("condutor_id", new TableInfo.Column("condutor_id", "INTEGER", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysAluno = new HashSet<TableInfo.ForeignKey>(3);
+        _foreignKeysAluno.add(new TableInfo.ForeignKey("turma", "SET NULL", "NO ACTION", Arrays.asList("turma_id"), Arrays.asList("id_turma")));
+        _foreignKeysAluno.add(new TableInfo.ForeignKey("responsavel", "SET NULL", "NO ACTION", Arrays.asList("responsavel_id"), Arrays.asList("id_responsavel")));
+        _foreignKeysAluno.add(new TableInfo.ForeignKey("condutor", "SET NULL", "NO ACTION", Arrays.asList("condutor_id"), Arrays.asList("id_condutor")));
+        final HashSet<TableInfo.Index> _indicesAluno = new HashSet<TableInfo.Index>(3);
+        _indicesAluno.add(new TableInfo.Index("index_aluno_turma_id", false, Arrays.asList("turma_id"), Arrays.asList("ASC")));
+        _indicesAluno.add(new TableInfo.Index("index_aluno_responsavel_id", false, Arrays.asList("responsavel_id"), Arrays.asList("ASC")));
+        _indicesAluno.add(new TableInfo.Index("index_aluno_condutor_id", false, Arrays.asList("condutor_id"), Arrays.asList("ASC")));
         final TableInfo _infoAluno = new TableInfo("aluno", _columnsAluno, _foreignKeysAluno, _indicesAluno);
         final TableInfo _existingAluno = TableInfo.read(db, "aluno");
         if (!_infoAluno.equals(_existingAluno)) {
@@ -156,10 +166,11 @@ public final class AppDatabase_Impl extends AppDatabase {
                   + " Expected:\n" + _infoCondutor + "\n"
                   + " Found:\n" + _existingCondutor);
         }
-        final HashMap<String, TableInfo.Column> _columnsResponsavel = new HashMap<String, TableInfo.Column>(4);
+        final HashMap<String, TableInfo.Column> _columnsResponsavel = new HashMap<String, TableInfo.Column>(5);
         _columnsResponsavel.put("id_responsavel", new TableInfo.Column("id_responsavel", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsResponsavel.put("nome", new TableInfo.Column("nome", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsResponsavel.put("telefone", new TableInfo.Column("telefone", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsResponsavel.put("email", new TableInfo.Column("email", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsResponsavel.put("criado_em", new TableInfo.Column("criado_em", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysResponsavel = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesResponsavel = new HashSet<TableInfo.Index>(0);
@@ -170,11 +181,13 @@ public final class AppDatabase_Impl extends AppDatabase {
                   + " Expected:\n" + _infoResponsavel + "\n"
                   + " Found:\n" + _existingResponsavel);
         }
-        final HashMap<String, TableInfo.Column> _columnsEscola = new HashMap<String, TableInfo.Column>(5);
+        final HashMap<String, TableInfo.Column> _columnsEscola = new HashMap<String, TableInfo.Column>(7);
         _columnsEscola.put("id_escola", new TableInfo.Column("id_escola", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsEscola.put("nome", new TableInfo.Column("nome", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsEscola.put("endereco", new TableInfo.Column("endereco", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsEscola.put("telefone", new TableInfo.Column("telefone", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsEscola.put("numero", new TableInfo.Column("numero", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsEscola.put("cep", new TableInfo.Column("cep", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsEscola.put("diretor", new TableInfo.Column("diretor", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsEscola.put("criado_em", new TableInfo.Column("criado_em", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysEscola = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesEscola = new HashSet<TableInfo.Index>(0);
@@ -185,15 +198,13 @@ public final class AppDatabase_Impl extends AppDatabase {
                   + " Expected:\n" + _infoEscola + "\n"
                   + " Found:\n" + _existingEscola);
         }
-        final HashMap<String, TableInfo.Column> _columnsTurma = new HashMap<String, TableInfo.Column>(6);
+        final HashMap<String, TableInfo.Column> _columnsTurma = new HashMap<String, TableInfo.Column>(5);
         _columnsTurma.put("id_turma", new TableInfo.Column("id_turma", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsTurma.put("turno", new TableInfo.Column("turno", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsTurma.put("serie", new TableInfo.Column("serie", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsTurma.put("nome", new TableInfo.Column("nome", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsTurma.put("horario_entrada", new TableInfo.Column("horario_entrada", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsTurma.put("horario_saida", new TableInfo.Column("horario_saida", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsTurma.put("id_escola", new TableInfo.Column("id_escola", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsTurma.put("criado_em", new TableInfo.Column("criado_em", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        final HashSet<TableInfo.ForeignKey> _foreignKeysTurma = new HashSet<TableInfo.ForeignKey>(1);
-        _foreignKeysTurma.add(new TableInfo.ForeignKey("escola", "CASCADE", "NO ACTION", Arrays.asList("id_escola"), Arrays.asList("id_escola")));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysTurma = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesTurma = new HashSet<TableInfo.Index>(0);
         final TableInfo _infoTurma = new TableInfo("turma", _columnsTurma, _foreignKeysTurma, _indicesTurma);
         final TableInfo _existingTurma = TableInfo.read(db, "turma");
@@ -230,7 +241,7 @@ public final class AppDatabase_Impl extends AppDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "c544397353e6171a0e9c2a7669ad9199", "e3d2bc3b2bf7013d46959b44b21c3c1d");
+    }, "e7aa5fc545e3d58b379210b0bcf77c40", "248b4314b83697f7e927c519c1112313");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(config.context).name(config.name).callback(_openCallback).build();
     final SupportSQLiteOpenHelper _helper = config.sqliteOpenHelperFactory.create(_sqliteConfig);
     return _helper;
