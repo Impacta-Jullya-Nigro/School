@@ -1,216 +1,134 @@
 [
     {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\responsavel_list_item.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\responsavel_list_item.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/fragment_editar_condutores.xml",
+        "source": "com.example.school.app-main-56:/layout/fragment_editar_condutores.xml"
     },
     {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\turma_list_item.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\turma_list_item.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/fragment_slideshow.xml",
+        "source": "com.example.school.app-main-56:/layout/fragment_slideshow.xml"
     },
     {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_cadastrar_condutores.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_cadastrar_condutores.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/fragment_home.xml",
+        "source": "com.example.school.app-main-56:/layout/fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_responsavel_options.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_responsavel_options.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/fragment_cadastrar_responsaveis.xml",
+        "source": "com.example.school.app-main-56:/layout/fragment_cadastrar_responsaveis.xml"
     },
     {
         "merged": "com.example.school.app-mergeDebugResources-53:/layout/fragment_escola_options.xml",
         "source": "com.example.school.app-main-56:/layout/fragment_escola_options.xml"
     },
     {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\content_main.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\content_main.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/item_condutor.xml",
+        "source": "com.example.school.app-main-56:/layout/item_condutor.xml"
     },
     {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\condutor_list_item.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\condutor_list_item.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/fragment_aluno_options.xml",
+        "source": "com.example.school.app-main-56:/layout/fragment_aluno_options.xml"
     },
     {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_escola_options.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_escola_options.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/app_bar_main.xml",
+        "source": "com.example.school.app-main-56:/layout/app_bar_main.xml"
     },
     {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_cadastrar_responsaveis.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_cadastrar_responsaveis.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/fragment_cadastrar_aluno.xml",
+        "source": "com.example.school.app-main-56:/layout/fragment_cadastrar_aluno.xml"
     },
     {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_editar_responsaveis.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_editar_responsaveis.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/fragment_editar_escolas.xml",
+        "source": "com.example.school.app-main-56:/layout/fragment_editar_escolas.xml"
     },
     {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_cadastrar_turma.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_cadastrar_turma.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/fragment_user_list.xml",
+        "source": "com.example.school.app-main-56:/layout/fragment_user_list.xml"
     },
     {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_turma_options.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_turma_options.xml"
-=======
-        "merged": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\app_bar_main.xml",
-        "source": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\app_bar_main.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/fragment_editar_responsaveis.xml",
+        "source": "com.example.school.app-main-56:/layout/fragment_editar_responsaveis.xml"
     },
     {
-        "merged": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\nav_header_main.xml",
-        "source": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\nav_header_main.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/fragment_cadastrar_condutores.xml",
+        "source": "com.example.school.app-main-56:/layout/fragment_cadastrar_condutores.xml"
     },
     {
-        "merged": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_user_list.xml",
-        "source": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_user_list.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/nav_header_main.xml",
+        "source": "com.example.school.app-main-56:/layout/nav_header_main.xml"
     },
     {
-        "merged": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_cadastro.xml",
-        "source": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_cadastro.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/condutor_list_item.xml",
+        "source": "com.example.school.app-main-56:/layout/condutor_list_item.xml"
     },
     {
-        "merged": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_cadastrar_condutores.xml",
-        "source": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_cadastrar_condutores.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/fragment_cadastrar_turma.xml",
+        "source": "com.example.school.app-main-56:/layout/fragment_cadastrar_turma.xml"
     },
     {
-        "merged": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_cadastrar_turma.xml",
-        "source": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_cadastrar_turma.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/fragment_login.xml",
+        "source": "com.example.school.app-main-56:/layout/fragment_login.xml"
     },
     {
-        "merged": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_home.xml",
-        "source": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_home.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\user_list_item.xml",
-        "source": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\user_list_item.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_register.xml",
-        "source": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_register.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_listar_condutores.xml",
-        "source": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_listar_condutores.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_cadastrar_escola.xml",
-        "source": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_cadastrar_escola.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_cadastrar_aluno.xml",
-        "source": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_cadastrar_aluno.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\content_main.xml",
-        "source": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\content_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\item_condutor.xml",
-        "source": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\item_condutor.xml"
->>>>>>> 32522647552eaf3437a1ad301fed80a1ea22492c
-    },
-    {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_cadastro.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_cadastro.xml"
-    },
-    {
-<<<<<<< HEAD
         "merged": "com.example.school.app-mergeDebugResources-53:/layout/fragment_turma_options.xml",
         "source": "com.example.school.app-main-56:/layout/fragment_turma_options.xml"
     },
     {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_editar_alunos.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_editar_alunos.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/fragment_listar_condutores.xml",
+        "source": "com.example.school.app-main-56:/layout/fragment_listar_condutores.xml"
     },
     {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_home.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_home.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/responsavel_list_item.xml",
+        "source": "com.example.school.app-main-56:/layout/responsavel_list_item.xml"
     },
     {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_register.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_register.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/activity_main.xml",
+        "source": "com.example.school.app-main-56:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\escola_list_item.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\escola_list_item.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/aluno_list_item.xml",
+        "source": "com.example.school.app-main-56:/layout/aluno_list_item.xml"
     },
     {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\nav_header_main.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\nav_header_main.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/fragment_register.xml",
+        "source": "com.example.school.app-main-56:/layout/fragment_register.xml"
     },
     {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_cadastrar_escola.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_cadastrar_escola.xml"
-    },
-    {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_editar_turmas.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_editar_turmas.xml"
-    },
-    {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_cadastrar_aluno.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_cadastrar_aluno.xml"
-    },
-    {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_editar_escolas.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_editar_escolas.xml"
-    },
-    {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_user_list.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_user_list.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/user_list_item.xml",
+        "source": "com.example.school.app-main-56:/layout/user_list_item.xml"
     },
     {
         "merged": "com.example.school.app-mergeDebugResources-53:/layout/fragment_responsavel_options.xml",
         "source": "com.example.school.app-main-56:/layout/fragment_responsavel_options.xml"
     },
     {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_login.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_login.xml"
-    },
-    {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_condutor_options.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_condutor_options.xml"
-    },
-    {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\user_list_item.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\user_list_item.xml"
-    },
-    {
         "merged": "com.example.school.app-mergeDebugResources-53:/layout/fragment_condutor_options.xml",
         "source": "com.example.school.app-main-56:/layout/fragment_condutor_options.xml"
     },
     {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\app_bar_main.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\app_bar_main.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/turma_list_item.xml",
+        "source": "com.example.school.app-main-56:/layout/turma_list_item.xml"
     },
     {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_editar_condutores.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_editar_condutores.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/fragment_cadastro.xml",
+        "source": "com.example.school.app-main-56:/layout/fragment_cadastro.xml"
     },
     {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\aluno_list_item.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\aluno_list_item.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/fragment_cadastrar_escola.xml",
+        "source": "com.example.school.app-main-56:/layout/fragment_cadastrar_escola.xml"
     },
     {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\activity_main.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/content_main.xml",
+        "source": "com.example.school.app-main-56:/layout/content_main.xml"
     },
     {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_slideshow.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_slideshow.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/fragment_editar_alunos.xml",
+        "source": "com.example.school.app-main-56:/layout/fragment_editar_alunos.xml"
     },
     {
-        "merged": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_aluno_options.xml",
-        "source": "C:\\Users\\jully\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_aluno_options.xml"
-=======
-        "merged": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_cadastrar_responsaveis.xml",
-        "source": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_cadastrar_responsaveis.xml"
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/escola_list_item.xml",
+        "source": "com.example.school.app-main-56:/layout/escola_list_item.xml"
     },
     {
-        "merged": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_slideshow.xml",
-        "source": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_slideshow.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-mergeDebugResources-53:\\layout\\fragment_login.xml",
-        "source": "C:\\Users\\Pichau\\.gradle\\daemon\\8.13\\com.example.school.app-main-56:\\layout\\fragment_login.xml"
->>>>>>> 32522647552eaf3437a1ad301fed80a1ea22492c
+        "merged": "com.example.school.app-mergeDebugResources-53:/layout/fragment_editar_turmas.xml",
+        "source": "com.example.school.app-main-56:/layout/fragment_editar_turmas.xml"
     }
 ]

@@ -33,7 +33,6 @@ drawable ic_person
 drawable responsaveis
 drawable side_nav_bar
 drawable turma
-<<<<<<< HEAD
 id action_alunoOptionsFragment_to_cadastrarAlunoFragment
 id action_alunoOptionsFragment_to_editarAlunosFragment
 id action_condutorOptionsFragment_to_cadastrarCondutoresFragment
@@ -45,10 +44,6 @@ id action_editarResponsaveisFragment_to_cadastrarResponsavelFragment
 id action_editarTurmasFragment_to_cadastrarTurmaFragment
 id action_escolaOptionsFragment_to_cadastrarEscolaFragment
 id action_escolaOptionsFragment_to_editarEscolasFragment
-=======
-id action_cadastrarCondutoresFragment_to_listarCondutoresFragment
-id action_listarCondutoresFragment_to_cadastrarCondutoresFragment
->>>>>>> 32522647552eaf3437a1ad301fed80a1ea22492c
 id action_loginFragment_to_nav_home
 id action_loginFragment_to_registerFragment
 id action_loginFragment_to_userListFragment
@@ -85,8 +80,8 @@ id cadastrarCondutoresFragment
 id cadastrarEscolaFragment
 id cadastrarResponsavelFragment
 id cadastrarTurmaFragment
-<<<<<<< HEAD
 id condutorOptionsFragment
+id delete_button
 id drawer_layout
 id editTextCep
 id editTextDiretor
@@ -98,21 +93,12 @@ id editTextNumero
 id editTextPlaca
 id editTextProfessor
 id editTextTelefone
+id edit_button
 id editarAlunosFragment
 id editarCondutoresFragment
 id editarEscolasFragment
 id editarResponsaveisFragment
 id editarTurmasFragment
-=======
-id delete_button
-id drawer_layout
-id edit_button
-id edit_text_idade
-id edit_text_nome
-id edit_text_professor
-id edit_text_serie
-id edit_text_turma
->>>>>>> 32522647552eaf3437a1ad301fed80a1ea22492c
 id email
 id escolaOptionsFragment
 id imageButtonAlunos
@@ -140,8 +126,6 @@ id label_condutor
 id label_responsavel
 id label_turma
 id list_users_button
-id listarCondutoresFragment
-id listar_condutores
 id login
 id loginFragment
 id mobile_navigation
@@ -154,7 +138,7 @@ id nav_slideshow
 id nav_view
 id nome_condutor
 id password
-<<<<<<< HEAD
+id placa_veiculo_condutor
 id recycler_view_alunos
 id recycler_view_condutores
 id recycler_view_escolas
@@ -167,15 +151,7 @@ id responsavelOptionsFragment
 id spinner_condutores
 id spinner_responsaveis
 id spinner_turmas
-=======
-id placa_veiculo_condutor
-id recycler_view_condutores
-id recycler_view_users
-id register
-id registerFragment
-id salvar_condutor
 id telefone_condutor
->>>>>>> 32522647552eaf3437a1ad301fed80a1ea22492c
 id textView
 id text_home
 id text_slideshow

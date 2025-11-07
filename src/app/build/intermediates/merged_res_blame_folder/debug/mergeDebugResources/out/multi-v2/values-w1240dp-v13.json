@@ -4,11 +4,7 @@
             "outputFile": "com.example.school.app-mergeDebugResources-52:/values-w1240dp-v13/values-w1240dp-v13.xml",
             "map": [
                 {
-<<<<<<< HEAD
-                    "source": "C:\\Users\\jully\\Desktop\\School\\src\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
-=======
-                    "source": "C:\\Users\\Pichau\\Desktop\\School\\src\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
->>>>>>> 32522647552eaf3437a1ad301fed80a1ea22492c
+                    "source": "C:\\Users\\jully\\Desktop\\School\\src\\src\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",

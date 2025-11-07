@@ -3856,12 +3856,8 @@ id action_bar_root
 id action_bar_spinner
 id action_bar_subtitle
 id action_bar_title
-<<<<<<< HEAD
 id action_condutorOptionsFragment_to_cadastrarCondutoresFragment
 id action_condutorOptionsFragment_to_editarCondutoresFragment
-=======
-id action_cadastrarCondutoresFragment_to_listarCondutoresFragment
->>>>>>> 32522647552eaf3437a1ad301fed80a1ea22492c
 id action_container
 id action_context_bar
 id action_divider
@@ -3873,7 +3869,6 @@ id action_editarTurmasFragment_to_cadastrarTurmaFragment
 id action_escolaOptionsFragment_to_cadastrarEscolaFragment
 id action_escolaOptionsFragment_to_editarEscolasFragment
 id action_image
-id action_listarCondutoresFragment_to_cadastrarCondutoresFragment
 id action_loginFragment_to_nav_home
 id action_loginFragment_to_registerFragment
 id action_loginFragment_to_userListFragment
@@ -4029,7 +4024,6 @@ id easeInOut
 id easeOut
 id east
 id edge
-<<<<<<< HEAD
 id editTextCep
 id editTextDiretor
 id editTextEmail
@@ -4040,9 +4034,7 @@ id editTextNumero
 id editTextPlaca
 id editTextProfessor
 id editTextTelefone
-=======
 id edit_button
->>>>>>> 32522647552eaf3437a1ad301fed80a1ea22492c
 id edit_query
 id edit_text_id
 id editarAlunosFragment
@@ -4149,8 +4141,6 @@ id linear
 id listMode
 id list_item
 id list_users_button
-id listarCondutoresFragment
-id listar_condutores
 id locale
 id login
 id loginFragment
@@ -4295,15 +4285,11 @@ id radio
 id ratio
 id rectangles
 id recycler_view
-<<<<<<< HEAD
 id recycler_view_alunos
 id recycler_view_condutores
 id recycler_view_escolas
 id recycler_view_responsaveis
 id recycler_view_turmas
-=======
-id recycler_view_condutores
->>>>>>> 32522647552eaf3437a1ad301fed80a1ea22492c
 id recycler_view_users
 id register
 id registerFragment
@@ -4318,7 +4304,6 @@ id right_side
 id rounded
 id row_index_key
 id rtl
-id salvar_condutor
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth

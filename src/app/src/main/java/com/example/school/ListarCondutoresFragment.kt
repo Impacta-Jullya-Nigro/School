@@ -9,7 +9,10 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.school.data.AppDatabase
+import com.example.school.data.Condutor
 import com.example.school.databinding.FragmentListarCondutoresBinding
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.toList
 import kotlinx.coroutines.launch
 
 class ListarCondutoresFragment : Fragment() {
@@ -35,7 +38,9 @@ class ListarCondutoresFragment : Fragment() {
 
         lifecycleScope.launch {
             val condutores = db.condutorDao().getAllCondutores()
-            condutorAdapter.submitList(condutores)
+            condutores.collect { myDataObject ->
+            condutorAdapter.submitList(myDataObject)
+            }
         }
     }
 

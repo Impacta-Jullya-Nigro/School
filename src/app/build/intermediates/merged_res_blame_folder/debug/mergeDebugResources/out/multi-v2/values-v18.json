@@ -4,11 +4,7 @@
             "outputFile": "com.example.school.app-mergeDebugResources-52:/values-v18/values-v18.xml",
             "map": [
                 {
-<<<<<<< HEAD
-                    "source": "C:\\Users\\jully\\.gradle\\caches\\8.13\\transforms\\d3f25401a004537824eadd1e7342b892\\transformed\\appcompat-1.7.1\\res\\values-v18\\values-v18.xml",
-=======
-                    "source": "C:\\Users\\Pichau\\.gradle\\caches\\8.13\\transforms\\19345094fe66087c2294ffb193f3f15a\\transformed\\appcompat-1.7.1\\res\\values-v18\\values-v18.xml",
->>>>>>> 32522647552eaf3437a1ad301fed80a1ea22492c
+                    "source": "C:\\Users\\jully\\.gradle\\caches\\8.13\\transforms\\19345094fe66087c2294ffb193f3f15a\\transformed\\appcompat-1.7.1\\res\\values-v18\\values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -4,11 +4,7 @@
             "outputFile": "com.example.school.app-mergeDebugResources-52:/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
-<<<<<<< HEAD
-                    "source": "C:\\Users\\jully\\.gradle\\caches\\8.13\\transforms\\5402053d1d5b72109ea122ce9f57d3ae\\transformed\\material-1.13.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
-=======
-                    "source": "C:\\Users\\Pichau\\.gradle\\caches\\8.13\\transforms\\6dc41cd571c9eb3a305c4022e9ea40b7\\transformed\\material-1.13.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
->>>>>>> 32522647552eaf3437a1ad301fed80a1ea22492c
+                    "source": "C:\\Users\\jully\\.gradle\\caches\\8.13\\transforms\\6dc41cd571c9eb3a305c4022e9ea40b7\\transformed\\material-1.13.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
