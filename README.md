@@ -81,44 +81,36 @@ Ele realiza comunicação com uma API externa, permitindo operações completas 
 
 ---
 
-## 🟢 Create — Criar Escola
+## 🟢 Create — Cadastrar Condutor
 
-- O usuário preenche um formulário com os dados da nova escola (nome, endereço, etc.) e clica no botão **Salvar**.
-- O Fragmento do formulário coleta os dados e envia para o **ViewModel**.
-- O ViewModel repassa os dados para o **Repository**.
-- O Repository executa duas ações:
-  - Usa o **Room** para inserir a nova escola no banco de dados local.
-  - Usa o **Retrofit** para enviar os dados da escola para a API remota (**POST**).
+- O usuário preenche o formulário.
+- Clica no botão "Salvar"
+- A View (Fragment) envia os dados para a ViewModel
+- A ViewModel chama o Repository, que salva o novo condutor no banco de dados (Room)
 
 
-## 🔵 Read — Listar Escolas
+## 🔵 Read — Listar Condutores
 
-- O fragmento de listagem (com **RecyclerView**) observa um **LiveData** ou **StateFlow** do ViewModel.
-- O ViewModel solicita a lista de escolas ao **Repository**.
-- O Repository busca os dados no **Room**, garantindo acesso rápido e suporte offline.
-- Os dados são exibidos na lista pelo **Adapter** (como o `EditarEscolasAdapter`).
-  
-
-## 🟡 Update — Editar Escola
-
-- Na lista de escolas, o usuário clica em uma escola para editar.
-- O Adapter captura o clique e abre o fragmento de formulário, enviando o **ID** da escola.
-- O formulário é preenchido automaticamente com os dados buscados do **Room** via ViewModel/Repository.
-- Após editar, o usuário clica em **Salvar**. O fluxo:
-  - ViewModel aciona o Repository.
-  - Repository:
-    - Atualiza os dados da escola no **Room** (**UPDATE**).
-    - Envia uma requisição **PUT** ou **PATCH** via Retrofit para atualizar no servidor.
+- A tela principal de condutores é aberta
+- A ViewModel carrega a lista de todos os condutores a partir do Repository
+- O Repository busca os dados no banco de dados (Room)
+- A lista é exibida em um RecyclerView na tela
 
 
-## 🔴 Delete — Excluir Escola
+## 🟡 Update — Editar Condutor
 
-- Na lista, cada item possui um botão ou ícone para excluir.
-- Ao clicar, o Adapter informa ao **ViewModel** qual escola deve ser removida.
-- O ViewModel solicita que o **Repository** execute a exclusão.
-- O Repository:
-  - Remove a escola do **Room** (**DELETE**).
-  - Envia uma requisição **DELETE** via Retrofit para remover a escola do servidor.
+- O usuário clica em um condutor da lista
+- Uma nova tela abre com os campos já preenchidos anteriormente
+- O usuário altera os dados e clica em "Salvar"
+- A ViewModel é notificada e manda o Repository atualizar as informações do condutor no banco de dados
+
+
+## 🔴 Delete — Excluir Condutor
+
+- Na lista, o usuário clica no ícone de lixeira ao lado do nome de um condutor
+- Um alerta de confirmação aparece: "Deseja mesmo excluir?"
+- Se o usuário confirmar, a ViewModel chama o Repository para remover aquele condutor do banco de dados (Room)
+- A lista na tela é atualizada automaticamente
 
 ---
 
@@ -140,3 +132,4 @@ Ele realiza comunicação com uma API externa, permitindo operações completas 
 - Layout mais moderno  
 - Feedbacks animados  
 
+---
