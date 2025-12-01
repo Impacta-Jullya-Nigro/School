@@ -26,7 +26,6 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             app:cardCornerRadius="16dp"
-            app:cardElevation="8dp"
             android:backgroundTint="#FFFFFF">
 
             <TextView
@@ -37,8 +36,7 @@
                 android:gravity="center"
                 android:text="Jullya Mendonça - 2402577"
                 android:textColor="#000000"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textSize="20sp" />
         </androidx.cardview.widget.CardView>
 
         <!-- Humberto -->
@@ -47,7 +45,6 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             app:cardCornerRadius="16dp"
-            app:cardElevation="8dp"
             android:backgroundTint="#FFFFFF">
 
             <TextView
@@ -67,7 +64,6 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             app:cardCornerRadius="16dp"
-            app:cardElevation="8dp"
             android:backgroundTint="#FFFFFF">
 
             <TextView
@@ -87,7 +83,6 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             app:cardCornerRadius="16dp"
-            app:cardElevation="8dp"
             android:backgroundTint="#FFFFFF">
 
             <TextView
@@ -106,7 +101,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardCornerRadius="16dp"
-            app:cardElevation="8dp"
             android:backgroundTint="#FFFFFF">
 
             <TextView

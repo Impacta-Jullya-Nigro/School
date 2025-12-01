@@ -28,7 +28,7 @@ class EditarEscolasAdapter(
 
         fun bind(escola: Escola) {
             binding.textViewEscolaNome.text = escola.nome
-            binding.textViewEscolaEndereco.text = "${escola.endereco}, ${escola.numero}"
+            binding.textViewEscolaEndereco.text = "${escola.logradouro}, ${escola.numero} - ${escola.bairro}, ${escola.cidade}"
             binding.imageViewEdit.setOnClickListener { onEdit(escola) }
             binding.imageViewDelete.setOnClickListener { onDelete(escola) }
         }
