@@ -1,0 +1,7 @@
+com.example.school.test.app-core-1.7.0-0 C:\Users\jully\.gradle\caches\8.13\transforms\1245ab705ffe0cec1c3dfa8a20d74535\transformed\core-1.7.0\res
+com.example.school.test.app-tracing-1.2.0-1 C:\Users\jully\.gradle\caches\8.13\transforms\7a1dfc43a63506b5ca425fa021720cd1\transformed\tracing-1.2.0\res
+com.example.school.test.app-androidTest-2 C:\Users\jully\Desktop\School\app\build\generated\res\resValues\androidTest\debug
+com.example.school.test.app-updated_navigation_xml-3 C:\Users\jully\Desktop\School\app\build\generated\updated_navigation_xml\debugAndroidTest
+com.example.school.test.app-mergeDebugAndroidTestResources-4 C:\Users\jully\Desktop\School\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.school.test.app-mergeDebugAndroidTestResources-5 C:\Users\jully\Desktop\School\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.school.test.app-debugAndroidTest-6 C:\Users\jully\Desktop\School\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

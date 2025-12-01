@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:rowCount="3"
+    android:alignmentMode="alignMargins"
+    android:columnOrderPreserved="false"
+    android:padding="14dp"
+    tools:context=".ui.cadastro.CadastroFragment">
+
+    <!-- Alunos -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/imageButtonAlunos"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/azul_escuro"
+            android:src="@drawable/alunos"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/text_button_alunos" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="ALUNOS"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!-- Responsáveis -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/imageButtonResponsaveis"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/azul_escuro"
+            android:src="@drawable/responsaveis"
+            android:scaleType="centerInside"
+            android:contentDescription="Responsáveis" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="RESPONSÁVEIS"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!-- Turma -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/imageButtonTurma"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/azul_escuro"
+            android:src="@drawable/turma"
+            android:scaleType="centerInside"
+            android:contentDescription="Turma" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TURMA"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!-- Escola -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/imageButtonEscola"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/azul_escuro"
+            android:src="@drawable/escola"
+            android:scaleType="centerInside"
+            android:contentDescription="Escola" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="ESCOLA"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!-- Condutores -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/imageButtonCondutores"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/azul_escuro"
+            android:src="@drawable/condutor"
+            android:scaleType="centerInside"
+            android:contentDescription="Condutores" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="CONDUTORES"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</GridLayout>
