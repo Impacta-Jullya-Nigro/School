@@ -53,11 +53,6 @@ Thumbs.db
 
 # Gradle
 .gradle/
-gradle-app.setting
-gradle-wrapper.jar
-gradle-wrapper.properties
-gradlew
-gradlew.bat
 
 # Arquivos de ambiente local (não versionar)
 local.properties
