@@ -10,7 +10,9 @@ data class Escola(
     @ColumnInfo(name = "id_escola")
     val id: Int = 0,
     val nome: String,
-    val endereco: String,
+    val logradouro: String,
+    val bairro: String,
+    val cidade: String,
     val numero: String,
     val cep: String,
     val diretor: String,

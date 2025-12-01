@@ -103,15 +103,15 @@ class SchoolViewModel(
         return escolaDao.getEscola(id).asLiveData()
     }
     
-    fun addNewEscola(nome: String, endereco: String, numero: String, cep: String, diretor: String) {
-        val novaEscola = Escola(nome = nome, endereco = endereco, numero = numero, cep = cep, diretor = diretor)
+    fun addNewEscola(nome: String, logradouro: String, bairro: String, cidade: String, numero: String, cep: String, diretor: String) {
+        val novaEscola = Escola(nome = nome, logradouro = logradouro, bairro = bairro, cidade = cidade, numero = numero, cep = cep, diretor = diretor)
         viewModelScope.launch {
             escolaDao.insert(novaEscola)
         }
     }
     
-    fun updateEscola(id: Int, nome: String, endereco: String, numero: String, cep: String, diretor: String) {
-        val escolaAtualizada = Escola(id = id, nome = nome, endereco = endereco, numero = numero, cep = cep, diretor = diretor)
+    fun updateEscola(id: Int, nome: String, logradouro: String, bairro: String, cidade: String, numero: String, cep: String, diretor: String) {
+        val escolaAtualizada = Escola(id = id, nome = nome, logradouro = logradouro, bairro = bairro, cidade = cidade, numero = numero, cep = cep, diretor = diretor)
         viewModelScope.launch {
             escolaDao.update(escolaAtualizada)
         }
