@@ -1,3 +1,0 @@
-com.example.school.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme
